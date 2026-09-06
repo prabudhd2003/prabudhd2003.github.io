@@ -1,299 +1,350 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Prabudhd Krishna Kandpal</title>
-<meta name="description" content="Prabudhd Krishna Kandpal — MS Computer Science (AI) at USC. Multimodal learning, LLM systems, and applied ML for decision science.">
+<meta name="description" content="Prabudhd Krishna Kandpal — M.S. Computer Science (Artificial Intelligence), University of Southern California. Multimodal representation learning, affective computing, and grounded LLM reasoning.">
 <meta name="author" content="Prabudhd Krishna Kandpal">
 <link rel="canonical" href="https://prabudhd.me/">
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="profile">
 <meta property="og:url" content="https://prabudhd.me/">
 <meta property="og:title" content="Prabudhd Krishna Kandpal">
-<meta property="og:description" content="MS Computer Science (AI) at USC. Multimodal learning, LLM systems, and applied ML for decision science.">
+<meta property="og:description" content="M.S. Computer Science (AI) at USC. Multimodal representation learning, affective computing, and grounded LLM reasoning.">
+<meta property="og:image" content="https://prabudhd.me/assets/headshot.jpg">
 <meta name="twitter:card" content="summary">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230c0d10'/%3E%3Ctext x='50' y='50' font-family='ui-monospace,monospace' font-size='54' font-weight='700' fill='%23ffb454' text-anchor='middle' dominant-baseline='central'%3Ep%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231d4e6f'/%3E%3Ctext x='50' y='53' font-family='Georgia,serif' font-size='58' fill='%23ffffff' text-anchor='middle' dominant-baseline='central'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/headshot@320.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Prabudhd Krishna Kandpal",
-  "url": "https://prabudhd.me",
-  "email": "mailto:pkandpal@usc.edu",
-  "jobTitle": "MS Computer Science (Artificial Intelligence) Student",
-  "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Southern California" },
-  "identifier": "https://orcid.org/0009-0000-7503-8263",
-  "sameAs": [
-    "https://github.com/prabudhd2003",
-    "https://linkedin.com/in/prabudhd",
-    "https://orcid.org/0009-0000-7503-8263"
-  ]
+  "@context":"https://schema.org","@type":"Person",
+  "name":"Prabudhd Krishna Kandpal",
+  "url":"https://prabudhd.me",
+  "image":"https://prabudhd.me/assets/headshot.jpg",
+  "email":"mailto:pkandpal@usc.edu",
+  "jobTitle":"M.S. Computer Science (Artificial Intelligence) Student",
+  "affiliation":{"@type":"CollegeOrUniversity","name":"University of Southern California"},
+  "knowsAbout":["Multimodal machine learning","Affective computing","Large language models","Time series forecasting"],
+  "sameAs":["https://scholar.google.com/citations?user=DyUCZtoAAAAJ","https://github.com/prabudhd2003","https://linkedin.com/in/prabudhd"]
 }
 </script>
 
 <style>
-/* ============ tokens ============ */
+/* ═══════════════ tokens ═══════════════ */
 :root{
-  --bg:#0b0c0f;
-  --bg-2:#101216;
-  --surface:#121419;
-  --surface-2:#171a20;
-  --line:#23262e;
-  --line-2:#2e323c;
-  --ink:#e9e7e2;
-  --ink-2:#a7abb5;
-  --ink-3:#6f7480;
-  --accent:#ffb454;
-  --accent-dim:#8a6432;
-  --accent-soft:rgba(255,180,84,.10);
-  --green:#7ddc9a;
-  --sel:rgba(255,180,84,.22);
-  --serif:"Newsreader",ui-serif,Georgia,serif;
-  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --maxw:1120px;
-  --shadow:0 1px 0 rgba(255,255,255,.03) inset, 0 18px 40px -24px rgba(0,0,0,.9);
-}
-html[data-theme="light"]{
-  --bg:#faf8f5;
-  --bg-2:#f3f0ea;
+  color-scheme:light;
+
+  --paper:#fcfbf8;
+  --paper-2:#f6f4ef;
   --surface:#ffffff;
-  --surface-2:#f6f3ee;
-  --line:#e3ddd3;
-  --line-2:#d5cec2;
-  --ink:#191817;
-  --ink-2:#55534f;
-  --ink-3:#8a877f;
-  --accent:#a35c00;
-  --accent-dim:#c99a55;
-  --accent-soft:rgba(163,92,0,.08);
-  --green:#1e7a4c;
-  --sel:rgba(163,92,0,.18);
-  --shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 14px 30px -22px rgba(0,0,0,.35);
+  --line:#e6e1d7;
+  --line-2:#d3cdc0;
+  --line-3:#bab3a3;
+
+  --ink:#16161a;
+  --ink-2:#3f4048;
+  --ink-3:#6d6e78;
+  --ink-4:#93949e;
+
+  --accent:#1d4e6f;
+  --accent-2:#14384f;
+  --accent-soft:#eef3f7;
+  --accent-line:#c3d5e2;
+
+  --serif:"Source Serif 4",ui-serif,Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+
+  --maxw:1140px;
+  --gap:clamp(28px,4vw,60px);
 }
 
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
 body{
-  margin:0;background:var(--bg);color:var(--ink);
-  font-family:var(--sans);font-size:16px;line-height:1.65;font-weight:350;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;
-  transition:background .35s ease,color .35s ease;
+  margin:0;background:var(--paper);color:var(--ink-2);
+  font-family:var(--sans);font-size:16.5px;line-height:1.7;font-weight:400;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
 }
-::selection{background:var(--sel)}
+::selection{background:#dbe7ef;color:var(--ink)}
 a{color:inherit;text-decoration:none}
-img{max-width:100%}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{color:var(--ink);font-family:var(--serif);font-weight:600;letter-spacing:-.015em;margin:0}
 
-/* subtle grain + top glow */
-body::before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
-  background:
-    radial-gradient(900px 420px at 78% -8%, var(--accent-soft), transparent 70%),
-    radial-gradient(700px 380px at 10% 0%, rgba(125,220,154,.05), transparent 70%);
-}
-body::after{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;mix-blend-mode:overlay;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-main,header,footer{position:relative;z-index:2}
-
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
 @media(max-width:640px){.wrap{padding:0 20px}}
 
-/* ============ nav ============ */
+/* small caps label */
+.label{
+  font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4);
+}
+
+/* ═══════════════ nav ═══════════════ */
 .nav{
-  position:sticky;top:0;z-index:50;
-  backdrop-filter:saturate(160%) blur(14px);
-  -webkit-backdrop-filter:saturate(160%) blur(14px);
-  background:color-mix(in srgb, var(--bg) 78%, transparent);
-  border-bottom:1px solid transparent;transition:border-color .3s ease;
+  position:sticky;top:0;z-index:60;background:rgba(252,251,248,.88);
+  backdrop-filter:saturate(180%) blur(12px);-webkit-backdrop-filter:saturate(180%) blur(12px);
+  border-bottom:1px solid transparent;transition:border-color .25s ease,box-shadow .25s ease;
 }
-.nav.stuck{border-bottom-color:var(--line)}
-.nav-in{display:flex;align-items:center;gap:22px;height:62px}
-.brand{font-family:var(--mono);font-size:13.5px;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
-.brand .dot{color:var(--accent)}
-.nav-links{display:flex;gap:2px;margin-left:auto;align-items:center}
+.nav.stuck{border-bottom-color:var(--line);box-shadow:0 1px 14px -6px rgba(30,30,40,.12)}
+.nav-in{display:flex;align-items:center;height:64px;gap:20px}
+.brand{
+  font-family:var(--serif);font-size:17px;font-weight:600;color:var(--ink);
+  letter-spacing:-.01em;white-space:nowrap;
+}
+.brand span{color:var(--accent)}
+.nav-links{display:flex;gap:1px;margin-left:auto;align-items:center;flex-wrap:nowrap}
 .nav-links a{
-  font-family:var(--mono);font-size:12px;color:var(--ink-3);
-  padding:7px 11px;border-radius:7px;letter-spacing:.02em;transition:color .18s,background .18s;
+  font-size:13.5px;font-weight:450;color:var(--ink-3);padding:7px 12px;border-radius:6px;
+  transition:color .16s,background .16s;white-space:nowrap;
 }
-.nav-links a:hover{color:var(--ink);background:var(--surface-2)}
-.nav-links a.active{color:var(--accent)}
-.theme-btn{
-  margin-left:8px;width:34px;height:34px;flex:0 0 34px;border-radius:9px;
-  border:1px solid var(--line);background:var(--surface);color:var(--ink-2);
-  display:grid;place-items:center;cursor:pointer;transition:.18s;font-size:14px;line-height:1;
+.nav-links a:hover{color:var(--ink);background:var(--paper-2)}
+.nav-links a.active{color:var(--accent);font-weight:550}
+.nav-cta{
+  margin-left:10px;font-size:13px;font-weight:550;padding:8px 15px;border-radius:7px;
+  background:var(--accent);color:#fff !important;transition:background .18s,transform .18s;
 }
-.theme-btn:hover{color:var(--accent);border-color:var(--line-2)}
-@media(max-width:780px){
-  .nav-links a{display:none}
-  .nav-links a.keep{display:inline-block}
+.nav-cta:hover{background:var(--accent-2) !important;transform:translateY(-1px)}
+@media(max-width:900px){
+  .nav-links a:not(.nav-cta):not(.keep){display:none}
+}
+@media(max-width:420px){.nav-links a.keep{display:none}}
+
+/* ═══════════════ hero ═══════════════ */
+.hero{padding:76px 0 68px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1fr 292px;gap:var(--gap);align-items:start}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .portrait-col{order:-1;max-width:190px}
 }
 
-/* ============ hero ============ */
-.hero{padding:88px 0 64px;border-bottom:1px solid var(--line)}
-.term{
-  font-family:var(--mono);font-size:12.5px;color:var(--ink-3);
-  display:flex;align-items:center;gap:9px;margin-bottom:26px;flex-wrap:wrap;
+.eyebrow{margin-bottom:14px}
+h1{
+  font-size:clamp(2.5rem,5.6vw,3.7rem);line-height:1.06;font-weight:600;
+  letter-spacing:-.028em;margin-bottom:16px;
 }
-.term .p{color:var(--green)}
-.term .c{color:var(--accent)}
-.cursor{display:inline-block;width:8px;height:15px;background:var(--accent);vertical-align:-2px;animation:blink 1.15s steps(2,start) infinite}
-@keyframes blink{50%{opacity:0}}
-h1.name{
-  font-family:var(--serif);font-weight:400;letter-spacing:-.028em;line-height:1.02;
-  font-size:clamp(2.9rem,8vw,5.4rem);margin:0 0 20px;
+.subtitle{
+  font-family:var(--serif);font-size:clamp(1.12rem,2vw,1.32rem);font-style:italic;
+  color:var(--accent);margin:0 0 24px;line-height:1.45;font-weight:400;
 }
-h1.name em{font-style:italic;color:var(--accent)}
-.tagline{
-  font-size:clamp(1.05rem,2.2vw,1.32rem);color:var(--ink-2);max-width:64ch;
-  margin:0 0 30px;line-height:1.62;font-weight:300;
-}
-.tagline b{color:var(--ink);font-weight:500}
-.meta-row{display:flex;flex-wrap:wrap;gap:8px 10px;margin-bottom:30px}
-.chip{
-  font-family:var(--mono);font-size:11.5px;color:var(--ink-2);
-  border:1px solid var(--line);background:var(--surface);
-  padding:5px 11px;border-radius:999px;display:inline-flex;align-items:center;gap:7px;
-}
-.chip .pulse{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 var(--green);animation:pulse 2.4s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(125,220,154,.5)}70%{box-shadow:0 0 0 7px rgba(125,220,154,0)}100%{box-shadow:0 0 0 0 rgba(125,220,154,0)}}
-.links{display:flex;flex-wrap:wrap;gap:10px}
+.hero-bio{font-size:17px;line-height:1.78;color:var(--ink-2);max-width:60ch;margin:0 0 26px}
+.hero-bio strong{color:var(--ink);font-weight:600}
+.hero-bio a{color:var(--accent);border-bottom:1px solid var(--accent-line)}
+.hero-bio a:hover{border-bottom-color:var(--accent)}
+
+.actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
 .btn{
-  font-family:var(--mono);font-size:12.5px;padding:10px 16px;border-radius:9px;
-  border:1px solid var(--line-2);background:var(--surface);color:var(--ink);
-  display:inline-flex;align-items:center;gap:8px;transition:.2s;box-shadow:var(--shadow);
+  display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;
+  padding:9px 16px;border-radius:8px;border:1px solid var(--line-2);
+  background:var(--surface);color:var(--ink-2);
+  transition:border-color .18s,color .18s,transform .18s,box-shadow .18s;
 }
-.btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
-.btn.primary{background:var(--accent);color:#161006;border-color:var(--accent);font-weight:700}
-.btn.primary:hover{color:#161006;filter:brightness(1.08)}
-.btn svg{width:14px;height:14px;flex:0 0 14px}
+.btn:hover{color:var(--accent);border-color:var(--accent-line);transform:translateY(-1px);box-shadow:0 4px 14px -8px rgba(29,78,111,.5)}
+.btn.solid{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:550}
+.btn.solid:hover{background:var(--accent-2);border-color:var(--accent-2);color:#fff}
+.btn svg{width:15px;height:15px;flex:0 0 15px}
 
-/* ============ sections ============ */
-section{padding:74px 0;border-bottom:1px solid var(--line)}
+/* portrait */
+.portrait{
+  position:relative;border-radius:14px;overflow:hidden;
+  border:1px solid var(--line-2);background:var(--paper-2);
+  box-shadow:0 18px 40px -26px rgba(24,30,40,.45), 0 2px 6px -3px rgba(24,30,40,.12);
+}
+.portrait img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.portrait-cap{
+  margin-top:12px;font-size:12.5px;line-height:1.55;color:var(--ink-4);
+  padding-left:12px;border-left:2px solid var(--accent-line);
+}
+
+/* ═══════════════ status strip ═══════════════ */
+.strip{background:var(--paper-2);border-bottom:1px solid var(--line)}
+.strip-in{display:flex;flex-wrap:wrap;gap:0;align-items:stretch}
+.stat{padding:20px 30px 20px 0;margin-right:30px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none;margin-right:0;padding-right:0}
+.stat-k{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-4);margin-bottom:4px}
+.stat-v{font-size:14.5px;color:var(--ink);font-weight:500;line-height:1.45}
+.stat-v em{font-style:normal;color:var(--ink-3);font-weight:400}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#1f9d55;margin-right:7px;vertical-align:1px}
+@media(max-width:760px){
+  .stat{border-right:none;margin-right:0;padding:14px 0;width:100%;border-bottom:1px solid var(--line)}
+  .stat:last-child{border-bottom:none}
+}
+
+/* ═══════════════ sections ═══════════════ */
+section{padding:72px 0;border-bottom:1px solid var(--line)}
 section:last-of-type{border-bottom:none}
-.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:34px;flex-wrap:wrap}
-.sec-num{font-family:var(--mono);font-size:11.5px;color:var(--accent);letter-spacing:.1em}
-h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,3.6vw,2.3rem);letter-spacing:-.02em;margin:0}
-.sec-note{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-left:auto}
+.sec-head{margin-bottom:36px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
+.sec-head h2{font-size:clamp(1.55rem,3vw,1.95rem);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sec-head h2 .n{
+  font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.14em;
+  color:var(--accent);flex:0 0 auto;
+}
+.sec-sub{margin-top:8px;font-size:14.5px;color:var(--ink-3);max-width:80ch}
 
-/* about */
-.about-grid{display:grid;grid-template-columns:1.55fr .95fr;gap:56px}
-@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:36px}}
-.prose p{font-size:17px;line-height:1.78;color:var(--ink-2);margin:0 0 18px;max-width:66ch}
+.two-col{display:grid;grid-template-columns:1fr 300px;gap:var(--gap);align-items:start}
+@media(max-width:900px){.two-col{grid-template-columns:1fr;gap:36px}}
+
+.prose p{font-size:16.5px;line-height:1.8;color:var(--ink-2);margin:0 0 20px;max-width:68ch}
 .prose p:last-child{margin-bottom:0}
-.prose strong{color:var(--ink);font-weight:500}
-.prose a{color:var(--accent);border-bottom:1px solid var(--accent-dim);transition:.15s}
-.prose a:hover{background:var(--accent-soft)}
-.facts{border-left:1px solid var(--line);padding-left:24px}
-.fact{margin-bottom:22px}
-.fact:last-child{margin-bottom:0}
-.fact-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
-.fact-v{font-size:14.5px;color:var(--ink);line-height:1.55}
-.fact-v span{color:var(--ink-3);display:block;font-size:13px}
+.prose strong{color:var(--ink);font-weight:600}
+.prose em{color:var(--ink);font-style:italic}
+.prose a{color:var(--accent);border-bottom:1px solid var(--accent-line);transition:border-color .15s}
+.prose a:hover{border-bottom-color:var(--accent)}
 
-/* research */
+/* interests card */
+.side-card{border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:24px 24px 8px}
+.side-card + .side-card{margin-top:16px}
+.side-card .label{margin-bottom:16px;display:block}
+.int{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.int:last-child{border-bottom:none}
+.int-t{font-family:var(--serif);font-size:16px;font-weight:600;color:var(--ink);margin-bottom:3px;line-height:1.35}
+.int-d{font-size:13.5px;color:var(--ink-3);line-height:1.55}
+
+/* news */
+.news{margin:0;padding:0;list-style:none}
+.news li{display:grid;grid-template-columns:88px 1fr;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}
+.news li:last-child{border-bottom:none}
+.news time{color:var(--ink-4);font-size:12.5px;font-weight:550;letter-spacing:.03em;padding-top:2px}
+.news span{color:var(--ink-2);line-height:1.6}
+.news a{color:var(--accent);border-bottom:1px solid var(--accent-line)}
+
+/* ═══════════════ publications ═══════════════ */
+.pubs{counter-reset:none}
 .pub{
-  display:grid;grid-template-columns:auto 1fr;gap:20px;
-  padding:22px 0;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:46px 1fr;gap:18px;
+  padding:24px 0;border-bottom:1px solid var(--line);
 }
-.pub:last-child{border-bottom:1px solid var(--line)}
-.pub-n{font-family:var(--mono);font-size:12px;color:var(--accent);padding-top:4px}
-.pub-t{font-family:var(--serif);font-size:1.22rem;line-height:1.38;margin:0 0 8px;letter-spacing:-.01em}
-.pub-a{font-size:14px;color:var(--ink-2);margin:0 0 10px}
-.pub-a u{text-decoration:none;color:var(--ink);border-bottom:1px solid var(--accent-dim)}
-.pub-v{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.tag{
-  font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;
-  padding:3px 9px;border-radius:5px;border:1px solid var(--line-2);color:var(--ink-3);background:var(--surface-2);
+.pub:first-child{border-top:1px solid var(--line)}
+@media(max-width:600px){.pub{grid-template-columns:1fr;gap:10px}}
+.pub-n{
+  font-family:var(--serif);font-size:14px;color:var(--accent);font-weight:600;
+  padding-top:3px;letter-spacing:.02em;
 }
-.tag.hot{color:var(--accent);border-color:var(--accent-dim);background:var(--accent-soft)}
+.pub-t{font-size:1.16rem;line-height:1.42;margin-bottom:8px;font-weight:600}
+.pub-au{font-size:14.5px;color:var(--ink-3);margin:0 0 6px;line-height:1.6}
+.pub-au b{color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--accent-line)}
+.pub-ven{font-size:14.5px;color:var(--ink-2);margin:0 0 14px;line-height:1.6}
+.pub-ven i{font-family:var(--serif);font-style:italic}
+.pub-abs{
+  font-size:14.5px;color:var(--ink-3);line-height:1.68;margin:0 0 14px;
+  padding-left:16px;border-left:2px solid var(--line-2);max-width:66ch;
+}
+.pub-links{display:flex;flex-wrap:wrap;gap:7px}
+.plink{
+  font-size:12.5px;font-weight:500;padding:5px 11px;border-radius:6px;
+  border:1px solid var(--line-2);color:var(--ink-3);background:var(--surface);
+  transition:.16s;display:inline-flex;align-items:center;gap:5px;
+}
+.plink:hover{color:var(--accent);border-color:var(--accent-line);background:var(--accent-soft)}
+.plink.pri{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent)}
+.pill{
+  font-size:11px;font-weight:650;letter-spacing:.08em;text-transform:uppercase;
+  padding:4px 9px;border-radius:5px;background:var(--accent-soft);
+  color:var(--accent);border:1px solid var(--accent-line);
+}
+.pill.grey{background:var(--paper-2);color:var(--ink-3);border-color:var(--line-2)}
 
-/* experience */
-.xp{display:grid;grid-template-columns:170px 1fr;gap:28px;padding:26px 0;border-top:1px solid var(--line)}
-.xp:last-child{border-bottom:1px solid var(--line)}
-@media(max-width:720px){.xp{grid-template-columns:1fr;gap:10px}}
-.xp-when{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);padding-top:5px;line-height:1.7}
-.xp-when b{display:block;color:var(--ink-2);font-weight:500}
-.xp-org{font-family:var(--serif);font-size:1.3rem;margin:0 0 3px;letter-spacing:-.01em}
-.xp-role{font-family:var(--mono);font-size:12px;color:var(--accent);margin:0 0 14px}
-.xp ul{margin:0;padding-left:18px}
-.xp li{color:var(--ink-2);font-size:15px;line-height:1.72;margin-bottom:9px}
-.xp li::marker{color:var(--accent-dim)}
+/* ═══════════════ experience ═══════════════ */
+.xp{
+  display:grid;grid-template-columns:200px 1fr;gap:var(--gap);
+  padding:30px 0;border-bottom:1px solid var(--line);
+}
+.xp:first-child{border-top:1px solid var(--line)}
+@media(max-width:820px){.xp{grid-template-columns:1fr;gap:12px}}
+.xp-meta{padding-top:3px}
+.xp-date{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:.01em;margin-bottom:3px}
+.xp-loc{font-size:13px;color:var(--ink-4)}
+.xp-org{font-size:1.24rem;margin-bottom:4px;line-height:1.3}
+.xp-org .sub{font-family:var(--sans);font-size:.72em;font-weight:450;color:var(--ink-3)}
+.xp-role{font-size:14px;font-weight:600;color:var(--accent);margin:0 0 15px;letter-spacing:.005em}
+.xp ul{margin:0;padding:0;list-style:none}
+.xp li{
+  position:relative;padding-left:20px;margin-bottom:11px;
+  font-size:15.5px;line-height:1.72;color:var(--ink-2);max-width:70ch;
+}
 .xp li:last-child{margin-bottom:0}
-.xp li b{color:var(--ink);font-weight:500}
+.xp li::before{
+  content:"";position:absolute;left:2px;top:11px;width:5px;height:5px;
+  border-radius:50%;background:var(--line-3);
+}
+.xp li strong{color:var(--ink);font-weight:600}
+.xp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}
+.xp-tags span{
+  font-size:12px;color:var(--ink-3);background:var(--paper-2);
+  border:1px solid var(--line);padding:3px 9px;border-radius:5px;
+}
 
-/* projects */
+/* ═══════════════ projects ═══════════════ */
 .filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:26px}
 .f{
-  font-family:var(--mono);font-size:11.5px;padding:6px 13px;border-radius:999px;cursor:pointer;
-  border:1px solid var(--line);background:transparent;color:var(--ink-3);transition:.18s;
+  font-family:var(--sans);font-size:13px;font-weight:500;padding:7px 14px;border-radius:7px;
+  cursor:pointer;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-3);
+  transition:.16s;
 }
-.f:hover{color:var(--ink);border-color:var(--line-2)}
-.f[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#161006;font-weight:700}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+.f:hover{color:var(--ink);border-color:var(--line-3)}
+.f[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
 .card{
-  position:relative;display:flex;flex-direction:column;
-  border:1px solid var(--line);background:var(--surface);border-radius:13px;padding:22px;
-  transition:transform .22s cubic-bezier(.2,.7,.3,1),border-color .22s,background .22s;
-  box-shadow:var(--shadow);overflow:hidden;
+  display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface);
+  border-radius:12px;padding:24px;transition:border-color .2s,box-shadow .2s,transform .2s;
 }
-.card::after{
-  content:"";position:absolute;inset:0;border-radius:13px;pointer-events:none;
-  background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%), var(--accent-soft), transparent 60%);
-  opacity:0;transition:opacity .3s;
-}
-.card:hover{transform:translateY(-4px);border-color:var(--line-2)}
-.card:hover::after{opacity:1}
-.card.star{border-color:var(--accent-dim)}
-.card-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
-.card h3{font-family:var(--serif);font-size:1.16rem;margin:0;letter-spacing:-.01em;line-height:1.3}
-.card .badge{
-  margin-left:auto;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--accent);border:1px solid var(--accent-dim);background:var(--accent-soft);
-  padding:3px 7px;border-radius:5px;white-space:nowrap;flex:0 0 auto;
-}
-.card p{font-size:14.2px;color:var(--ink-2);line-height:1.66;margin:0 0 16px;flex:1}
+.card:hover{border-color:var(--accent-line);box-shadow:0 14px 34px -22px rgba(24,40,60,.45);transform:translateY(-3px)}
+.card.feat{border-color:var(--accent-line);background:linear-gradient(180deg,var(--accent-soft) 0%,var(--surface) 46%)}
+.card-top{display:flex;align-items:flex-start;gap:12px;margin-bottom:11px}
+.card h3{font-size:1.13rem;line-height:1.32;flex:1}
+.card p{font-size:14.5px;line-height:1.68;color:var(--ink-3);margin:0 0 16px;flex:1}
+.card p strong{color:var(--ink-2);font-weight:600}
 .card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
-.card .go{
-  font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
-  display:inline-flex;align-items:center;gap:7px;transition:.18s;margin-top:auto;
+.card .tags span{
+  font-size:11.5px;color:var(--ink-3);background:var(--paper-2);
+  border:1px solid var(--line);padding:3px 9px;border-radius:5px;
 }
-.card:hover .go{color:var(--accent)}
-.card .go .arw{transition:transform .22s}
-.card:hover .go .arw{transform:translateX(3px)}
+.card .go{font-size:13px;font-weight:550;color:var(--accent);display:inline-flex;align-items:center;gap:7px;margin-top:auto}
+.card .go .arw{transition:transform .2s}
+.card:hover .go .arw{transform:translateX(4px)}
 .hidden{display:none}
 
-/* skills */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-.skill-box{border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:20px}
-.skill-h{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:13px}
-.skill-l{display:flex;flex-wrap:wrap;gap:6px}
-.skill-l span{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);border:1px solid var(--line);background:var(--surface-2);padding:4px 9px;border-radius:6px}
+/* ═══════════════ skills ═══════════════ */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;border-top:1px solid var(--line)}
+.sk{padding:24px 26px 24px 0;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.sk:last-child{border-right:none}
+@media(max-width:900px){.sk{border-right:none;padding-right:0}}
+.sk .label{display:block;margin-bottom:13px;color:var(--accent)}
+.sk-list{display:flex;flex-wrap:wrap;gap:6px}
+.sk-list span{
+  font-size:13px;color:var(--ink-2);background:var(--surface);
+  border:1px solid var(--line);padding:5px 11px;border-radius:6px;
+}
 
-/* contact */
-.contact{text-align:center;padding:88px 0}
-.contact h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:16px}
-.contact p{color:var(--ink-2);max-width:52ch;margin:0 auto 30px;font-size:17px;line-height:1.7}
-.contact .links{justify-content:center}
-footer{border-top:1px solid var(--line);padding:26px 0 40px}
-.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+/* ═══════════════ contact ═══════════════ */
+.contact{background:var(--paper-2);border-top:1px solid var(--line)}
+.contact-in{padding:78px 0;text-align:center}
+.contact h2{font-size:clamp(1.9rem,4vw,2.5rem);margin-bottom:16px}
+.contact p{font-size:17px;color:var(--ink-2);max-width:56ch;margin:0 auto 30px;line-height:1.75}
+.contact .actions{justify-content:center}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--paper-2)}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-4)}
+.foot a{color:var(--ink-3)}
 .foot a:hover{color:var(--accent)}
 
-/* reveal */
-.rv{opacity:0;transform:translateY(16px);transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
+/* ═══════════════ motion ═══════════════ */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .55s cubic-bezier(.22,.7,.3,1),transform .55s cubic-bezier(.22,.7,.3,1)}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){
   .rv{opacity:1;transform:none;transition:none}
   html{scroll-behavior:auto}
-  .cursor,.chip .pulse{animation:none}
+}
+@media print{
+  .nav,.filters,.contact,.rv{position:static}
+  .rv{opacity:1;transform:none}
+  body{background:#fff}
 }
 </style>
 </head>
@@ -301,126 +352,169 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px}
 
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="brand">prabudhd<span class="dot">.</span>me</a>
+    <a href="#top" class="brand">Prabudhd Krishna Kandpal<span>.</span></a>
     <nav class="nav-links">
-      <a href="#about">about</a>
-      <a href="#research">research</a>
-      <a href="#experience">experience</a>
-      <a href="#projects" class="keep">projects</a>
-      <a href="#skills">skills</a>
-      <a href="#contact" class="keep">contact</a>
-      <button class="theme-btn" id="themeBtn" aria-label="Toggle light and dark theme" title="Toggle theme">
-        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 0 0 17z" fill="currentColor" stroke="none"/></svg>
-      </button>
+      <a href="#about">About</a>
+      <a href="#publications" class="keep">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#projects" class="keep">Projects</a>
+      <a href="#contact" class="nav-cta">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
 
-<!-- ================= HERO ================= -->
+<!-- ══════════ HERO ══════════ -->
 <div class="hero">
-  <div class="wrap">
-    <div class="term">
-      <span class="p">prabudhd@usc</span><span>:</span><span class="c">~</span><span>$</span>
-      <span>whoami</span><span class="cursor" aria-hidden="true"></span>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="label eyebrow">University of Southern California · Viterbi School of Engineering</div>
+      <h1>Prabudhd Krishna Kandpal</h1>
+      <p class="subtitle">M.S. Computer Science, Artificial Intelligence</p>
+      <p class="hero-bio">
+        I work on <strong>multimodal machine learning</strong> — models that reason jointly over
+        speech, vision, and language instead of treating each stream in isolation. My current
+        research asks whether a model can identify the precise moment a human conversation turns
+        adversarial, and what representation is required to see it coming.
+      </p>
+      <div class="actions">
+        <a class="btn solid" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Curriculum Vitae
+        </a>
+        <a class="btn" href="mailto:pkandpal@usc.edu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          Email
+        </a>
+        <a class="btn" href="https://scholar.google.com/citations?user=DyUCZtoAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.91V17h2V8L12 2zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+          Google Scholar
+        </a>
+        <a class="btn" href="https://github.com/prabudhd2003" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.26.8-.57v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.13-.3-.54-1.53.11-3.18 0 0 1-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.3-1.56 3.3-1.24 3.3-1.24.65 1.65.24 2.88.12 3.18.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .31.21.68.82.57A12 12 0 0 0 12 .5Z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://linkedin.com/in/prabudhd" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21h-4V9Z"/></svg>
+          LinkedIn
+        </a>
+      </div>
     </div>
 
-    <h1 class="name">Prabudhd Krishna<br><em>Kandpal</em></h1>
-
-    <p class="tagline">
-      MS Computer Science <b>(AI track)</b> at <b>USC Viterbi</b>. I build models that read
-      people and markets — <b>multimodal transformers</b> for how conversations go wrong,
-      <b>LLM systems</b> that replace spreadsheet labor, and <b>predictive targeting</b> for
-      therapies entering markets that don't exist yet.
-    </p>
-
-    <div class="meta-row">
-      <span class="chip"><span class="pulse"></span> Open to Summer 2027 &amp; new-grad roles</span>
-      <span class="chip">📍 Los Angeles, CA</span>
-      <span class="chip">GPA 4.0 / 4.0</span>
-      <span class="chip">2 peer-reviewed papers</span>
-    </div>
-
-    <div class="links">
-      <a class="btn primary" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Résumé
-      </a>
-      <a class="btn" href="mailto:pkandpal@usc.edu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        Email
-      </a>
-      <a class="btn" href="https://github.com/prabudhd2003" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.26.8-.57v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.13-.3-.54-1.53.11-3.18 0 0 1-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.3-1.56 3.3-1.24 3.3-1.24.65 1.65.24 2.88.12 3.18.77.84 1.23 1.92 1.23 3.24 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .31.21.68.82.57A12 12 0 0 0 12 .5Z"/></svg>
-        GitHub
-      </a>
-      <a class="btn" href="https://linkedin.com/in/prabudhd" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21h-4V9Z"/></svg>
-        LinkedIn
-      </a>
-      <a class="btn" href="https://orcid.org/0009-0000-7503-8263" target="_blank" rel="noopener">ORCID</a>
+    <div class="portrait-col">
+      <figure class="portrait" style="margin:0">
+        <img src="assets/headshot.jpg" width="900" height="900"
+             alt="Portrait of Prabudhd Krishna Kandpal" fetchpriority="high">
+      </figure>
+      <p class="portrait-cap">
+        Los Angeles, California<br>
+        <a href="mailto:pkandpal@usc.edu" style="color:var(--accent)">pkandpal@usc.edu</a>
+      </p>
     </div>
   </div>
 </div>
 
-<!-- ================= ABOUT ================= -->
+<!-- ══════════ STATUS STRIP ══════════ -->
+<div class="strip">
+  <div class="wrap strip-in">
+    <div class="stat">
+      <div class="stat-k">Status</div>
+      <div class="stat-v"><span class="dot"></span>Seeking Summer 2027 internships</div>
+    </div>
+    <div class="stat">
+      <div class="stat-k">Degree</div>
+      <div class="stat-v">M.S. Computer Science <em>· expected May 2027</em></div>
+    </div>
+    <div class="stat">
+      <div class="stat-k">Grade Point Average</div>
+      <div class="stat-v">4.00 / 4.00 <em>· USC</em></div>
+    </div>
+    <div class="stat">
+      <div class="stat-k">Publications</div>
+      <div class="stat-v">2 peer-reviewed <em>· Springer</em></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ ABOUT ══════════ -->
 <section id="about">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="sec-num">01</span><h2>About</h2>
-      <span class="sec-note">// the short version</span>
+      <h2><span class="n">01</span> About</h2>
+      <p class="sec-sub">Background, current research, and what I am looking for next.</p>
     </div>
-    <div class="about-grid">
+
+    <div class="two-col">
       <div class="prose rv">
         <p>
-          I'm a master's student in Computer Science at <strong>USC Viterbi</strong>, on the
-          Artificial Intelligence track. My work sits at the seam between
-          <strong>multimodal machine learning</strong> and <strong>decision science</strong>:
-          I like problems where the signal is spread across audio, video, and text, and where
-          getting the model right actually changes what somebody does on Monday morning.
+          I am a master's student in Computer Science at the <strong>University of Southern
+          California</strong>, on the Artificial Intelligence track, advised through coursework and
+          project work in machine learning and applied AI. Before USC I completed a bachelor's degree
+          in Artificial Intelligence and Machine Learning at GGSIP University in Delhi, graduating
+          with a 9.45/10 aggregate and two peer-reviewed papers.
         </p>
         <p>
-          Most recently I built a multimodal transformer from scratch that predicts the exact
-          moment a two-person conversation tips from calm into conflict — aligning asynchronous
-          tone, facial expression, and language to hit <strong>86.7% accuracy</strong>, about
-          <strong>7.2 points ahead of a Gemini API baseline</strong>. Before that I spent summers
-          at <strong>Novartis</strong> and <strong>ZS&nbsp;/&nbsp;Pfizer</strong> doing the
-          less glamorous, more consequential version of the same thing: gradient-boosted targeting
-          models, RAG agents with a deterministic calculation layer, and resource allocation across
-          16 portfolios.
+          My research concerns <strong>how meaning is distributed across modalities</strong>. In
+          natural conversation, the signal that matters is rarely confined to the words: it is
+          carried by prosody, by facial affect, and by timing relative to the other speaker. My
+          current project treats this directly. Given a recorded dyadic exchange, the task is to
+          localize the specific utterance at which the interaction shifts from cooperative to
+          adversarial — a problem that requires aligning three asynchronous streams at utterance
+          granularity rather than pooling them into a single clip-level embedding. A transformer
+          architecture I designed and trained from scratch reaches <strong>86.7% accuracy</strong>
+          on this task over twenty hours of annotated dialogue, exceeding a strong Gemini API
+          baseline by <strong>7.2 percentage points</strong>.
         </p>
         <p>
-          I've published twice with <strong>Springer</strong> (time-series forecasting; transformer-based
-          summarization &amp; sentiment), TA'd USC's graduate AI course, and I still write
-          competitive-programming C++ for fun. Currently looking for
-          <strong>Summer 2027 internships</strong> and <strong>new-grad research/ML roles</strong> —
-          and seriously considering a PhD in multimodal learning.
+          Running alongside the research is a second interest in <em>whether these methods survive
+          contact with practice</em>. Over two summers at <strong>Novartis</strong> and
+          <strong>ZS Associates</strong> I built gradient-boosted models for identifying early
+          adopters of therapies in markets that did not yet exist, and retrieval-augmented systems
+          that pair a language model with a deterministic calculation layer so that generated
+          figures remain auditable. The constraints in that setting — interpretability, calibration,
+          the cost of a false positive to a real clinician — have shaped how I evaluate models
+          generally.
+        </p>
+        <p>
+          I am currently looking for <strong>Summer 2027 research internships</strong> and, beyond
+          that, <strong>doctoral programs</strong> in multimodal representation learning and
+          affective computing. If you work on problems where the interesting structure lies between
+          modalities rather than within one, I would be glad to hear from you.
         </p>
       </div>
-      <aside class="facts rv">
-        <div class="fact">
-          <div class="fact-k">Now</div>
-          <div class="fact-v">M.S. Computer Science (AI)<span>USC Viterbi · Aug 2025 – May 2027</span></div>
+
+      <aside class="rv">
+        <div class="side-card">
+          <span class="label">Research Interests</span>
+          <div class="int">
+            <div class="int-t">Multimodal representation learning</div>
+            <div class="int-d">Cross-modal alignment and fusion when streams are asynchronous and unequally informative.</div>
+          </div>
+          <div class="int">
+            <div class="int-t">Affective &amp; interactional computing</div>
+            <div class="int-d">Modeling emotional trajectory and conflict onset in naturalistic human dialogue.</div>
+          </div>
+          <div class="int">
+            <div class="int-t">Grounded LLM reasoning</div>
+            <div class="int-d">Retrieval augmentation and deterministic tool use as a route to verifiable generation.</div>
+          </div>
+          <div class="int">
+            <div class="int-t">Applied predictive modeling</div>
+            <div class="int-d">Forecasting and uncertainty under sparse supervision and shifting distributions.</div>
+          </div>
         </div>
-        <div class="fact">
-          <div class="fact-k">Before</div>
-          <div class="fact-v">B.S. AI &amp; Machine Learning<span>GGSIP University, Delhi · 9.45/10</span></div>
-        </div>
-        <div class="fact">
-          <div class="fact-k">Research interests</div>
-          <div class="fact-v">Multimodal representation learning · affective computing · LLM reasoning &amp; retrieval · time-series forecasting</div>
-        </div>
-        <div class="fact">
-          <div class="fact-k">Teaching</div>
-          <div class="fact-v">Course Producer, CSCI 561: Artificial Intelligence<span>USC · Spring 2026</span></div>
-        </div>
-        <div class="fact">
-          <div class="fact-k">Elsewhere</div>
-          <div class="fact-v">
-            <a href="https://github.com/prabudhd2003" style="color:var(--accent)">GitHub</a> ·
-            <a href="https://linkedin.com/in/prabudhd" style="color:var(--accent)">LinkedIn</a> ·
-            <a href="https://orcid.org/0009-0000-7503-8263" style="color:var(--accent)">ORCID</a>
+
+        <div class="side-card">
+          <span class="label">Education</span>
+          <div class="int">
+            <div class="int-t">M.S. Computer Science (AI)</div>
+            <div class="int-d">University of Southern California · Aug 2025 – May 2027 · GPA 4.00</div>
+          </div>
+          <div class="int">
+            <div class="int-t">B.S. Artificial Intelligence &amp; Machine Learning</div>
+            <div class="int-d">GGSIP University, Delhi · 2021 – 2025 · 9.45 / 10</div>
           </div>
         </div>
       </aside>
@@ -428,363 +522,406 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px}
   </div>
 </section>
 
-<!-- ================= RESEARCH ================= -->
-<section id="research">
+<!-- ══════════ NEWS ══════════ -->
+<section id="news">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="sec-num">02</span><h2>Research &amp; Publications</h2>
-      <span class="sec-note">// peer-reviewed</span>
+      <h2><span class="n">02</span> Recent</h2>
+    </div>
+    <ul class="news rv">
+      <li><time>Aug 2026</time><span>Completed a summer at <strong>Novartis</strong> (AI &amp; Automation), shipping an adoption-propensity model and an LLM reporting agent on AWS Bedrock.</span></li>
+      <li><time>Jan 2026</time><span>Appointed <strong>Course Producer</strong> for CSCI 561: Foundations of Artificial Intelligence at USC.</span></li>
+      <li><time>Dec 2025</time><span>Paper on transformer-based summarization and sentiment analysis published in <em>Lecture Notes in Electrical Engineering</em> (InCITe 2024). <a href="https://link.springer.com/chapter/10.1007/978-981-97-8193-5_24" target="_blank" rel="noopener">Read →</a></span></li>
+      <li><time>Aug 2025</time><span>Began the M.S. in Computer Science (Artificial Intelligence) at USC Viterbi.</span></li>
+      <li><time>Jul 2025</time><span>Concluded a six-month decision-analytics engagement with <strong>ZS Associates</strong> on the Pfizer account; received the “Best Case Study Solution” award and a return offer.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ PUBLICATIONS ══════════ -->
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2><span class="n">03</span> Publications</h2>
+      <p class="sec-sub">
+        Peer-reviewed work, most recent first. A complete and continuously updated list is available on
+        <a href="https://scholar.google.com/citations?user=DyUCZtoAAAAJ&amp;hl=en" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid var(--accent-line)">Google Scholar</a>.
+      </p>
     </div>
 
-    <div class="rv">
-      <div class="pub">
+    <div class="pubs rv">
+
+      <article class="pub">
         <div class="pub-n">[3]</div>
         <div>
           <h3 class="pub-t">Predicting Emotional Descent in Dyadic Interaction</h3>
-          <p class="pub-a"><u>P. K. Kandpal</u> — graduate research project, USC</p>
-          <p class="pub-a" style="color:var(--ink-3);font-size:13.5px;max-width:70ch">
-            A multimodal transformer built from scratch to align asynchronous audio, visual, and
-            text streams and localize the utterance where a conversation turns. 20+ hours of dialogue;
-            86.7% accuracy, +7.2 pp over a Gemini API baseline.
+          <p class="pub-au"><b>P. K. Kandpal</b></p>
+          <p class="pub-ven">Manuscript in preparation, 2026 &nbsp;·&nbsp; <span class="pill">In progress</span></p>
+          <p class="pub-abs">
+            A transformer trained from scratch to fuse prosodic, visual, and lexical streams at
+            utterance granularity and localize conflict onset in two-person conversation. Evaluated
+            on twenty hours of annotated dialogue; 86.7% accuracy, 7.2 points above a Gemini API
+            baseline.
           </p>
-          <div class="pub-v">
-            <span class="tag hot">In progress</span>
-            <span class="tag">Multimodal</span>
-            <span class="tag">Affective computing</span>
-            <a class="tag" href="https://github.com/prabudhd2003/Calm-to-Conflict" target="_blank" rel="noopener">Code ↗</a>
+          <div class="pub-links">
+            <a class="plink pri" href="https://github.com/prabudhd2003/Calm-to-Conflict" target="_blank" rel="noopener">Code ↗</a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="pub">
+      <article class="pub">
         <div class="pub-n">[2]</div>
         <div>
-          <h3 class="pub-t">Text Summarization and Sentiment Analysis Using Transformer-Based Models: A Comparative Analysis</h3>
-          <p class="pub-a"><u>P. K. Kandpal</u> et al.</p>
-          <div class="pub-v">
-            <span class="tag hot">InCITe 2024</span>
-            <span class="tag">Springer LNEE</span>
-            <span class="tag">NLP · Transformers</span>
+          <h3 class="pub-t">Text Summarization and Sentiment Analysis Using Transformer-Based Models: Comparative Analysis</h3>
+          <p class="pub-au"><b>P. K. Kandpal</b>, D. Seth, N. Garg, N. Sharma</p>
+          <p class="pub-ven">
+            In <i>Intelligent Solutions for Smart Adaptation in Digital Era</i> (InCITe 2024),
+            Lecture Notes in Electrical Engineering, vol. 1278. Springer, 2025.
+          </p>
+          <p class="pub-abs">
+            A controlled comparison of transformer architectures on paired summarization and
+            sentiment tasks, examining where abstractive summarization preserves — and where it
+            distorts — the affective content of the source text.
+          </p>
+          <div class="pub-links">
+            <a class="plink pri" href="https://link.springer.com/chapter/10.1007/978-981-97-8193-5_24" target="_blank" rel="noopener">Springer ↗</a>
+            <a class="plink" href="https://doi.org/10.1007/978-981-97-8193-5_24" target="_blank" rel="noopener">DOI</a>
+            <span class="plink" style="cursor:default">LNEE 1278</span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="pub">
+      <article class="pub">
         <div class="pub-n">[1]</div>
         <div>
-          <h3 class="pub-t">Time Series Forecasting of NSE Stocks Using Machine Learning Models (ARIMA, Prophet, Stacked LSTM)</h3>
-          <p class="pub-a"><u>P. K. Kandpal</u> et al.</p>
-          <div class="pub-v">
-            <span class="tag hot">ICDAM 2023</span>
-            <span class="tag">Springer LNNS 788</span>
-            <span class="tag">Time series</span>
-            <a class="tag" href="https://github.com/prabudhd2003/Research-Papers" target="_blank" rel="noopener">Papers ↗</a>
+          <h3 class="pub-t">Time Series Forecasting of NSE Stocks Using Machine Learning Models (ARIMA, Facebook Prophet, and Stacked LSTM)</h3>
+          <p class="pub-au"><b>P. K. Kandpal</b>, Shourya, Y. Yadav, N. Sharma</p>
+          <p class="pub-ven">
+            In <i>Proceedings of Data Analytics and Management</i> (ICDAM 2023),
+            Lecture Notes in Networks and Systems, vol. 788. Springer, 2023.
+          </p>
+          <p class="pub-abs">
+            A head-to-head evaluation of classical, additive, and deep sequence models on National
+            Stock Exchange equities, with attention to the horizons at which added model capacity
+            stops paying for itself.
+          </p>
+          <div class="pub-links">
+            <a class="plink pri" href="https://link.springer.com/chapter/10.1007/978-981-99-6553-3_24" target="_blank" rel="noopener">Springer ↗</a>
+            <a class="plink" href="https://doi.org/10.1007/978-981-99-6553-3_24" target="_blank" rel="noopener">DOI</a>
+            <a class="plink" href="https://github.com/prabudhd2003/Stock_Price_Prediction" target="_blank" rel="noopener">Code ↗</a>
+            <span class="plink" style="cursor:default">LNNS 788</span>
           </div>
         </div>
-      </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<!-- ================= EXPERIENCE ================= -->
+<!-- ══════════ INDUSTRY EXPERIENCE ══════════ -->
 <section id="experience">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="sec-num">03</span><h2>Experience</h2>
-      <span class="sec-note">// industry &amp; teaching</span>
+      <h2><span class="n">04</span> Industry Experience</h2>
+      <p class="sec-sub">Applied machine learning and decision science in pharmaceutical and SaaS settings.</p>
     </div>
 
     <div class="rv">
       <article class="xp">
-        <div class="xp-when"><b>Jun – Aug 2026</b>East Hanover, NJ</div>
+        <div class="xp-meta">
+          <div class="xp-date">Jun – Aug 2026</div>
+          <div class="xp-loc">East Hanover, New Jersey</div>
+        </div>
         <div>
           <h3 class="xp-org">Novartis</h3>
-          <p class="xp-role">BPA Analyst Intern — AI &amp; Automation</p>
+          <p class="xp-role">Business Planning &amp; Analysis Intern — AI &amp; Automation</p>
           <ul>
-            <li>Modeled adoption dynamics for a novel cardiovascular therapy in a market where the diagnostic test didn't previously exist — a <b>LightGBM</b> model on early testing and market data surfaced high-probability early adopters so field teams could prioritize outreach while the category was still being built.</li>
-            <li>Cut weekly performance reporting from <b>hours to minutes</b> with LLM-powered conversational agents on <b>AWS Bedrock</b>, pairing retrieval-augmented generation with a deterministic calculation layer so the numbers stay right.</li>
+            <li>Modeled adoption propensity for a novel cardiovascular therapy launching into a category whose diagnostic test had no prior clinical footprint. A <strong>LightGBM</strong> model over early testing and market signals ranked prescribers by likelihood of adoption, allowing field teams to allocate outreach while the market was still forming.</li>
+            <li>Designed conversational reporting agents on <strong>AWS Bedrock</strong> that pair retrieval-augmented generation with a deterministic calculation layer, so that every figure a stakeholder reads traces back to a computed value rather than a sampled one. Weekly performance reporting fell from <strong>hours to minutes</strong>.</li>
           </ul>
+          <div class="xp-tags"><span>LightGBM</span><span>AWS Bedrock</span><span>RAG</span><span>Python</span><span>SQL</span></div>
         </div>
       </article>
 
       <article class="xp">
-        <div class="xp-when"><b>Feb – Jul 2025</b>Delhi, India</div>
+        <div class="xp-meta">
+          <div class="xp-date">Feb – Jul 2025</div>
+          <div class="xp-loc">New Delhi, India</div>
+        </div>
         <div>
-          <h3 class="xp-org">ZS Associates <span style="color:var(--ink-3);font-size:.8em">/ Pfizer</span></h3>
+          <h3 class="xp-org">ZS Associates <span class="sub">— Pfizer account</span></h3>
           <p class="xp-role">Decision Analytics Associate Intern</p>
           <ul>
-            <li>Built an ML predictive targeting model (<b>XGBoost + SHAP</b>) to improve early-adopter identification, mitigate market-penetration risk, and maximize commercial ROI.</li>
-            <li>Designed resource-allocation models redistributing coverage across <b>16 portfolios</b> under profitability, budget, and workload constraints.</li>
-            <li>Ran A/B testing, ROI modeling, and coverage-gap clustering across APAC (Japan, Australia, NZ) to optimize promotional capital allocation.</li>
-            <li>Shipped Excel and Tableau analytics adopted globally — awarded <b>“Best Case Study Solution”</b> and a full-time conversion offer.</li>
+            <li>Built a predictive targeting model (<strong>XGBoost</strong> with <strong>SHAP</strong> attribution) to identify early adopters, with the interpretability requirement treated as a first-class constraint rather than a post-hoc report.</li>
+            <li>Formulated resource-allocation models that redistributed field coverage across <strong>16 portfolios</strong> under simultaneous profitability, budget, and workload constraints.</li>
+            <li>Ran A/B tests, ROI modeling, and coverage-gap clustering across APAC markets (Japan, Australia, New Zealand) to inform promotional capital allocation.</li>
+            <li>Delivered analytics tooling adopted across global teams; received the <strong>“Best Case Study Solution”</strong> award and a full-time conversion offer.</li>
           </ul>
+          <div class="xp-tags"><span>XGBoost</span><span>SHAP</span><span>A/B testing</span><span>Tableau</span><span>Snowflake</span></div>
         </div>
       </article>
 
       <article class="xp">
-        <div class="xp-when"><b>Jan – May 2026</b>Los Angeles, CA</div>
-        <div>
-          <h3 class="xp-org">University of Southern California</h3>
-          <p class="xp-role">Course Producer / Grader — CSCI 561: Artificial Intelligence</p>
-          <ul>
-            <li>Graded exams and mentored graduate students through search, logic, and probabilistic reasoning — the fastest way I've found to discover which parts of AI I only <i>thought</i> I understood.</li>
-          </ul>
+        <div class="xp-meta">
+          <div class="xp-date">Aug – Nov 2023</div>
+          <div class="xp-loc">New Delhi, India</div>
         </div>
-      </article>
-
-      <article class="xp">
-        <div class="xp-when"><b>Aug – Nov 2023</b>Delhi, India</div>
         <div>
           <h3 class="xp-org">LunexAI</h3>
-          <p class="xp-role">AI/ML Intern</p>
+          <p class="xp-role">Artificial Intelligence / Machine Learning Intern</p>
           <ul>
-            <li>Co-developed a <b>GPT-3 + ChromaDB</b> content-generation engine for a pay-per-use SaaS platform, streamlining vector storage and preprocessing to power real-time personalized recommendations.</li>
+            <li>Co-developed a content-generation engine combining <strong>GPT-3</strong> with a <strong>ChromaDB</strong> vector store, restructuring the storage and preprocessing path to support real-time personalized retrieval for a pay-per-use SaaS platform.</li>
           </ul>
+          <div class="xp-tags"><span>GPT-3</span><span>ChromaDB</span><span>Vector search</span><span>Python</span></div>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
+<!-- ══════════ TEACHING ══════════ -->
+<section id="teaching">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2><span class="n">05</span> Teaching</h2>
+      <p class="sec-sub">Graduate instruction and mentorship at USC.</p>
+    </div>
+
+    <div class="rv">
+      <article class="xp">
+        <div class="xp-meta">
+          <div class="xp-date">Jan – May 2026</div>
+          <div class="xp-loc">Los Angeles, California</div>
+        </div>
+        <div>
+          <h3 class="xp-org">University of Southern California</h3>
+          <p class="xp-role">Course Producer &amp; Grader — CSCI 561: Foundations of Artificial Intelligence</p>
+          <ul>
+            <li>Supported the graduate section of USC's core AI course, covering <strong>search, adversarial game playing, propositional and first-order logic, and probabilistic reasoning</strong>.</li>
+            <li>Held office hours and mentored students through programming assignments, with particular attention to the gap between an algorithm that is understood and one that can be implemented correctly.</li>
+            <li>Designed and calibrated grading rubrics for examinations and assignments across a large enrollment, aiming for consistency across graders rather than speed.</li>
+          </ul>
+          <div class="xp-tags"><span>Search &amp; heuristics</span><span>Logic</span><span>Probabilistic reasoning</span><span>Mentorship</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
 <section id="projects">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="sec-num">04</span><h2>Projects</h2>
-      <span class="sec-note">// things I built to find out</span>
+      <h2><span class="n">06</span> Selected Projects</h2>
+      <p class="sec-sub">Implementation work, largely built to test an idea rather than to ship a product. Source is available for each.</p>
     </div>
 
     <div class="filters rv" id="filters">
-      <button class="f" data-f="all" aria-pressed="true">all</button>
-      <button class="f" data-f="ml" aria-pressed="false">ml &amp; research</button>
-      <button class="f" data-f="llm" aria-pressed="false">llm</button>
-      <button class="f" data-f="rl" aria-pressed="false">rl &amp; search</button>
-      <button class="f" data-f="systems" aria-pressed="false">systems &amp; games</button>
-      <button class="f" data-f="web" aria-pressed="false">web</button>
+      <button class="f" data-f="all" aria-pressed="true">All</button>
+      <button class="f" data-f="ml" aria-pressed="false">Machine learning</button>
+      <button class="f" data-f="llm" aria-pressed="false">Language models</button>
+      <button class="f" data-f="rl" aria-pressed="false">Search &amp; RL</button>
+      <button class="f" data-f="systems" aria-pressed="false">Systems</button>
+      <button class="f" data-f="web" aria-pressed="false">Web</button>
     </div>
 
     <div class="grid rv" id="grid">
 
-      <a class="card star" data-t="ml" href="https://github.com/prabudhd2003/Calm-to-Conflict" target="_blank" rel="noopener">
-        <div class="card-top"><h3>Calm&nbsp;→&nbsp;Conflict</h3><span class="badge">Flagship</span></div>
-        <p>Utterance-level conflict-onset prediction in dyadic video. A from-scratch multimodal transformer fuses tone, facial expression, and text across 20+ hours of dialogue to catch the exact turn where things go sideways. 86.7% accuracy, +7.2 pp over Gemini.</p>
-        <div class="tags"><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">Multimodal</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+      <a class="card feat" data-t="ml" href="https://github.com/prabudhd2003/Calm-to-Conflict" target="_blank" rel="noopener">
+        <div class="card-top"><h3>Calm to Conflict</h3><span class="pill">Research</span></div>
+        <p>Utterance-level conflict-onset prediction in dyadic video. A multimodal transformer written from scratch aligns prosody, facial affect, and text across twenty hours of dialogue to localize the turn at which cooperation breaks down. <strong>86.7% accuracy, +7.2 points over a Gemini baseline.</strong></p>
+        <div class="tags"><span>PyTorch</span><span>Transformers</span><span>Multimodal fusion</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="llm ml" href="https://github.com/prabudhd2003/rag_for_pdf" target="_blank" rel="noopener">
-        <div class="card-top"><h3>RAG from Scratch</h3></div>
-        <p>A retrieval-augmented generation pipeline over PDFs built without a framework — chunking, embedding, vector search, and prompt assembly written by hand so every failure mode is visible instead of hidden behind an abstraction.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">Embeddings</span><span class="tag">LLM</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <div class="card-top"><h3>Retrieval-Augmented Generation from First Principles</h3></div>
+        <p>A RAG pipeline over PDF corpora implemented without a framework — chunking, embedding, vector search, and prompt assembly written by hand, on the premise that every failure mode of retrieval should be visible rather than abstracted away.</p>
+        <div class="tags"><span>Python</span><span>Embeddings</span><span>Vector search</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="ml web" href="https://github.com/prabudhd2003/SafeWebExtension_WebPage" target="_blank" rel="noopener">
         <div class="card-top"><h3>Safe Web</h3></div>
-        <p>A browser extension that keeps children safer online by analyzing page text and images in real time. A CNN handles image classification, exported to <b>ONNX.js</b> so inference runs locally in the browser rather than shipping every image to a server.</p>
-        <div class="tags"><span class="tag">CNN</span><span class="tag">ONNX.js</span><span class="tag">JavaScript</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <p>A browser extension that classifies page text and imagery in real time to filter content unsuitable for children. A convolutional classifier is exported to <strong>ONNX.js</strong> so that inference runs locally in the browser and no image leaves the user's machine.</p>
+        <div class="tags"><span>CNN</span><span>ONNX.js</span><span>JavaScript</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="ml" href="https://github.com/prabudhd2003/Stock_Price_Prediction" target="_blank" rel="noopener">
-        <div class="card-top"><h3>NSE Price Forecasting</h3><span class="badge">Published</span></div>
-        <p>The web app behind my ICDAM 2023 paper — ARIMA, Prophet, and a stacked LSTM benchmarked head-to-head on NSE equities, with the honest finding that the fanciest model doesn't always win.</p>
-        <div class="tags"><span class="tag">LSTM</span><span class="tag">ARIMA</span><span class="tag">Prophet</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <div class="card-top"><h3>NSE Forecasting Study</h3><span class="pill grey">Published</span></div>
+        <p>The implementation accompanying the ICDAM 2023 paper: ARIMA, Prophet, and a stacked LSTM evaluated on the same National Stock Exchange series, packaged as a web application for interactive comparison.</p>
+        <div class="tags"><span>LSTM</span><span>ARIMA</span><span>Prophet</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="rl" href="https://github.com/prabudhd2003/snake" target="_blank" rel="noopener">
-        <div class="card-top"><h3>Q-Learning Snake</h3></div>
-        <p>Tabular Q-learning agent that teaches itself to play Snake — maximizing food while avoiding walls and its own tail. Small enough to reason about every state transition, which is exactly the point.</p>
-        <div class="tags"><span class="tag">Reinforcement Learning</span><span class="tag">Python</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <div class="card-top"><h3>Q-Learning Agent for Snake</h3></div>
+        <p>A tabular Q-learning agent that learns a food-seeking, self-avoiding policy from scratch. The state space is small enough that every transition can be inspected — which is precisely the appeal as a study of exploration and reward shaping.</p>
+        <div class="tags"><span>Reinforcement learning</span><span>Python</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="rl" href="https://github.com/prabudhd2003/dino_game" target="_blank" rel="noopener">
-        <div class="card-top"><h3>Neuroevolution Dino</h3></div>
-        <p>The Chrome dinosaur game solved with a genetic algorithm — a population of agents mutated and selected on fitness until obstacle avoidance emerges without a single gradient step.</p>
-        <div class="tags"><span class="tag">Genetic Algorithms</span><span class="tag">Python</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <div class="card-top"><h3>Neuroevolution for Obstacle Avoidance</h3></div>
+        <p>The Chrome dinosaur game solved by genetic algorithm: a population of controllers mutated and selected on fitness until competent obstacle avoidance emerges without a single gradient step.</p>
+        <div class="tags"><span>Genetic algorithms</span><span>Python</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="rl systems" href="https://github.com/prabudhd2003/PathAlgorithms" target="_blank" rel="noopener">
         <div class="card-top"><h3>Pathfinding Visualizer</h3></div>
-        <p>Dijkstra and A* rendered step by step in PyGame, so the difference a heuristic makes is something you watch rather than something you're told.</p>
-        <div class="tags"><span class="tag">Algorithms</span><span class="tag">PyGame</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <p>Dijkstra's algorithm and A* rendered step by step, so that the effect of an admissible heuristic on the explored frontier is something one observes rather than something one is told.</p>
+        <div class="tags"><span>Algorithms</span><span>PyGame</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="systems" href="https://github.com/prabudhd2003/SudokuSolver" target="_blank" rel="noopener">
         <div class="card-top"><h3>Real-Time Sudoku Solver</h3></div>
-        <p>A Java desktop app that reads a Sudoku grid and solves it visually, animating the backtracking search as it prunes the board.</p>
-        <div class="tags"><span class="tag">Java</span><span class="tag">Backtracking</span><span class="tag">GUI</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <p>A Java application that reads a Sudoku grid and solves it under a graphical interface, animating the backtracking search as constraints propagate and branches are pruned.</p>
+        <div class="tags"><span>Java</span><span>Backtracking</span><span>GUI</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="systems" href="https://github.com/prabudhd2003/Tetris_cpp" target="_blank" rel="noopener">
         <div class="card-top"><h3>Tetris &amp; Ping Pong in C++</h3></div>
-        <p>Two arcade classics rebuilt from first principles with Raylib — game loop, collision, scoring, input handling. Written mostly because competitive-programming C++ and game-loop C++ are different muscles.</p>
-        <div class="tags"><span class="tag">C++</span><span class="tag">Raylib</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <p>Two arcade classics rebuilt with Raylib — game loop, collision resolution, scoring, and input handling written from scratch. An exercise in the fact that competitive-programming C++ and real-time systems C++ are different disciplines.</p>
+        <div class="tags"><span>C++</span><span>Raylib</span><span>Real-time loops</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="web" href="https://github.com/prabudhd2003/Styx_Shopping_Cart" target="_blank" rel="noopener">
         <div class="card-top"><h3>Styx Shopping Cart</h3></div>
-        <p>A fully functional React shopping cart — state management, cart persistence, and a deployed build on GitHub Pages.</p>
-        <div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <p>A complete React shopping-cart application — state management, cart persistence, and a deployed production build — written to understand client-side state properly rather than by convention.</p>
+        <div class="tags"><span>React</span><span>JavaScript</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="ml llm" href="https://github.com/prabudhd2003/Research-Papers" target="_blank" rel="noopener">
         <div class="card-top"><h3>Research Papers</h3></div>
-        <p>The published work, collected — including the transformer summarization &amp; sentiment comparison from InCITe 2024 and the NSE forecasting study from ICDAM 2023.</p>
-        <div class="tags"><span class="tag">Springer</span><span class="tag">NLP</span><span class="tag">Forecasting</span></div>
-        <span class="go">view on github <span class="arw">→</span></span>
+        <p>Manuscripts and supporting material for the published work, collected in one repository for readers without institutional access to Springer.</p>
+        <div class="tags"><span>Springer</span><span>NLP</span><span>Forecasting</span></div>
+        <span class="go">View repository <span class="arw">→</span></span>
       </a>
 
       <a class="card" data-t="systems" href="https://github.com/prabudhd2003" target="_blank" rel="noopener">
-        <div class="card-top"><h3>More on GitHub</h3></div>
-        <p>Competitive programming, algorithm coursework (CSCI 570), datasets, and the usual graveyard of half-finished experiments that taught me something anyway.</p>
-        <div class="tags"><span class="tag">C++</span><span class="tag">Python</span><span class="tag">Java</span></div>
-        <span class="go">browse everything <span class="arw">→</span></span>
+        <div class="card-top"><h3>Further Work</h3></div>
+        <p>Competitive programming, algorithms coursework from CSCI 570, datasets, and the ordinary accumulation of experiments that did not become projects but taught something anyway.</p>
+        <div class="tags"><span>C++</span><span>Python</span><span>Java</span></div>
+        <span class="go">Browse GitHub <span class="arw">→</span></span>
       </a>
 
     </div>
   </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
+<!-- ══════════ SKILLS ══════════ -->
 <section id="skills">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="sec-num">05</span><h2>Toolkit</h2>
-      <span class="sec-note">// what I reach for</span>
+      <h2><span class="n">07</span> Technical Background</h2>
     </div>
     <div class="skills rv">
-      <div class="skill-box">
-        <div class="skill-h">Machine Learning</div>
-        <div class="skill-l">
-          <span>PyTorch</span><span>Transformers</span><span>LLMs / RAG</span><span>XGBoost</span>
-          <span>LightGBM</span><span>SHAP</span><span>Time-series forecasting</span><span>Predictive modeling</span>
+      <div class="sk">
+        <span class="label">Machine Learning</span>
+        <div class="sk-list">
+          <span>PyTorch</span><span>Transformers</span><span>Multimodal fusion</span><span>LLMs &amp; RAG</span>
+          <span>XGBoost</span><span>LightGBM</span><span>SHAP</span><span>Time-series forecasting</span>
         </div>
       </div>
-      <div class="skill-box">
-        <div class="skill-h">Languages</div>
-        <div class="skill-l">
+      <div class="sk">
+        <span class="label">Languages</span>
+        <div class="sk-list">
           <span>Python</span><span>C / C++</span><span>SQL</span><span>R</span><span>Java</span><span>JavaScript</span>
         </div>
       </div>
-      <div class="skill-box">
-        <div class="skill-h">Data &amp; Platforms</div>
-        <div class="skill-l">
-          <span>AWS (Bedrock)</span><span>Snowflake</span><span>Databricks</span><span>Dataiku DSS</span>
-          <span>ChromaDB</span><span>Pandas</span><span>NumPy</span><span>Git</span>
+      <div class="sk">
+        <span class="label">Infrastructure &amp; Data</span>
+        <div class="sk-list">
+          <span>AWS Bedrock</span><span>Snowflake</span><span>Databricks</span><span>Dataiku</span>
+          <span>ChromaDB</span><span>pandas</span><span>NumPy</span><span>Git</span>
         </div>
       </div>
-      <div class="skill-box">
-        <div class="skill-h">Analytics</div>
-        <div class="skill-l">
-          <span>A/B testing</span><span>ROI modeling</span><span>Market mix modeling</span>
-          <span>Tableau</span><span>Power BI</span><span>Excel</span><span>Matplotlib</span><span>Seaborn</span>
+      <div class="sk">
+        <span class="label">Quantitative Methods</span>
+        <div class="sk-list">
+          <span>A/B testing</span><span>ROI modeling</span><span>Marketing mix modeling</span>
+          <span>Tableau</span><span>Power BI</span><span>Matplotlib</span><span>Seaborn</span>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div class="term" style="justify-content:center;margin-bottom:18px">
-      <span class="p">prabudhd@usc</span><span>:</span><span class="c">~</span><span>$</span><span>mail -s "hello"</span>
-    </div>
-    <h2 class="rv">Let's talk.</h2>
-    <p class="rv">
-      I'm looking for Summer 2027 internships, new-grad ML/research roles, and PhD-track
-      collaborations in multimodal learning. If you're working on something where the interesting
-      signal is spread across modalities, I'd like to hear about it.
-    </p>
-    <div class="links rv">
-      <a class="btn primary" href="mailto:pkandpal@usc.edu">pkandpal@usc.edu</a>
-      <a class="btn" href="tel:+12133012629">+1 (213) 301-2629</a>
-      <a class="btn" href="https://linkedin.com/in/prabudhd" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
     </div>
   </div>
 </section>
 
 </main>
 
+<!-- ══════════ CONTACT ══════════ -->
+<div class="contact" id="contact">
+  <div class="wrap contact-in">
+    <h2>Get in touch</h2>
+    <p>
+      I am glad to hear about research collaborations, Summer 2027 internships, and doctoral
+      opportunities in multimodal learning. Email is the surest way to reach me.
+    </p>
+    <div class="actions">
+      <a class="btn solid" href="mailto:pkandpal@usc.edu">pkandpal@usc.edu</a>
+      <a class="btn" href="tel:+12133012629">+1 (213) 301-2629</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=DyUCZtoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn" href="https://linkedin.com/in/prabudhd" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="wrap foot">
-    <span>© <span id="yr">2026</span> Prabudhd Krishna Kandpal</span>
-    <span>Built from scratch · hosted on GitHub Pages · <a href="https://github.com/prabudhd2003" target="_blank" rel="noopener">source</a></span>
+    <span>© <span id="yr">2026</span> Prabudhd Krishna Kandpal · Los Angeles, California</span>
+    <span>Last updated September 2026 · <a href="https://github.com/prabudhd2003" target="_blank" rel="noopener">Source</a></span>
   </div>
 </footer>
 
 <script>
 (function(){
   "use strict";
-
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  /* ---- sticky nav border ---- */
   var nav = document.getElementById('nav');
-  var onScroll = function(){ nav.classList.toggle('stuck', window.scrollY > 8); };
+  function onScroll(){ nav.classList.toggle('stuck', window.scrollY > 6); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
-  /* ---- theme toggle (session only, no storage) ---- */
-  var root = document.documentElement;
-  document.getElementById('themeBtn').addEventListener('click', function(){
-    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-  });
-
-  /* ---- scroll reveal ---- */
   var rv = document.querySelectorAll('.rv');
   if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, {rootMargin:'0px 0px -8% 0px', threshold:0.05});
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -6% 0px', threshold:.04});
     rv.forEach(function(el){ io.observe(el); });
   } else {
     rv.forEach(function(el){ el.classList.add('in'); });
   }
 
-  /* ---- active nav link ---- */
-  var secs = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
-  var navA = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+  var navA = [].slice.call(document.querySelectorAll('.nav-links a'));
+  var secs = [].slice.call(document.querySelectorAll('section[id], div.contact[id]'));
   if ('IntersectionObserver' in window) {
-    var so = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (!e.isIntersecting) return;
+    var so = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
         navA.forEach(function(a){
+          if(a.classList.contains('nav-cta')) return;
           a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
         });
       });
-    }, {rootMargin:'-45% 0px -50% 0px'});
+    }, {rootMargin:'-42% 0px -52% 0px'});
     secs.forEach(function(s){ so.observe(s); });
   }
 
-  /* ---- project filters ---- */
-  var cards = Array.prototype.slice.call(document.querySelectorAll('#grid .card'));
+  var cards = [].slice.call(document.querySelectorAll('#grid .card'));
   document.getElementById('filters').addEventListener('click', function(ev){
-    var b = ev.target.closest('.f'); if (!b) return;
+    var b = ev.target.closest('.f'); if(!b) return;
     var f = b.dataset.f;
     this.querySelectorAll('.f').forEach(function(x){ x.setAttribute('aria-pressed', String(x === b)); });
     cards.forEach(function(c){
       var show = f === 'all' || (' ' + c.dataset.t + ' ').indexOf(' ' + f + ' ') > -1;
       c.classList.toggle('hidden', !show);
-    });
-  });
-
-  /* ---- card spotlight ---- */
-  cards.forEach(function(c){
-    c.addEventListener('pointermove', function(e){
-      var r = c.getBoundingClientRect();
-      c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      c.style.setProperty('--my', (e.clientY - r.top) + 'px');
     });
   });
 })();
