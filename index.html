@@ -352,10 +352,18 @@ section:last-of-type{border-bottom:none}
 .hidden{display:none}
 
 /* ═══════════════ skills ═══════════════ */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;border-top:1px solid var(--line)}
-.sk{padding:24px 26px 24px 0;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
-.sk:last-child{border-right:none}
-@media(max-width:900px){.sk{border-right:none;padding-right:0}}
+.skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.sk{padding:24px 26px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);min-width:0}
+.sk:nth-child(4n+1){padding-left:0}
+.sk:nth-child(4n),.sk:last-child{border-right:none;padding-right:0}
+@media(min-width:901px) and (max-width:1063px){
+  .skills{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .sk:nth-child(4n){border-right:1px solid var(--line);padding-right:26px}
+  .sk:nth-child(4n+1){padding-left:26px}
+  .sk:nth-child(3n+1){padding-left:0}
+  .sk:nth-child(3n),.sk:last-child{border-right:none;padding-right:0}
+}
+@media(max-width:900px){.sk{border-right:none;padding-left:0;padding-right:0}}
 .sk .label{display:block;margin-bottom:13px;color:var(--accent)}
 .sk-list{display:flex;flex-wrap:wrap;gap:6px}
 .sk-list span{
