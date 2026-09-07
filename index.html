@@ -296,6 +296,31 @@ section:last-of-type{border-bottom:none}
   border:1px solid var(--line);padding:3px 9px;border-radius:5px;
 }
 
+/* ═══════════════ coursework ═══════════════ */
+.term-block{margin-bottom:36px}
+.term-block:last-child{margin-bottom:0}
+.term-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+.term-head .label{color:var(--accent)}
+.term-head .term-note{font-size:12.5px;color:var(--ink-4)}
+.courses{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+@media(max-width:860px){.courses{grid-template-columns:1fr;gap:0}}
+.course{
+  display:grid;grid-template-columns:1fr auto;gap:10px 16px;align-items:start;
+  padding:15px 0;border-bottom:1px solid var(--line);
+}
+.c-code{
+  font-size:12px;font-weight:650;letter-spacing:.06em;color:var(--accent);
+  display:block;margin-bottom:3px;
+}
+.c-title{font-family:var(--serif);font-size:16px;font-weight:600;color:var(--ink);line-height:1.35}
+.c-prof{display:block;margin-top:4px;font-size:13px;color:var(--ink-3)}
+.c-grade{
+  font-size:12px;font-weight:650;letter-spacing:.04em;padding:3px 10px;border-radius:5px;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line);
+  white-space:nowrap;align-self:center;
+}
+.c-grade.now{background:var(--paper-2);color:var(--ink-3);border-color:var(--line-2);font-weight:550}
+
 /* ═══════════════ projects ═══════════════ */
 .filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:26px}
 .f{
@@ -344,7 +369,6 @@ section:last-of-type{border-bottom:none}
 .contact h2{font-size:clamp(1.9rem,4vw,2.5rem);margin-bottom:16px}
 .contact p{font-size:17px;color:var(--ink-2);max-width:56ch;margin:0 auto 30px;line-height:1.75}
 .contact .actions{justify-content:center}
-.mailnote{font-size:13.5px !important;color:var(--ink-4) !important;margin:22px auto 0 !important;max-width:62ch}
 footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--paper-2)}
 .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-4)}
 .foot a{color:var(--ink-3)}
@@ -548,9 +572,9 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
     <ul class="news rv">
       <li><time>Aug 2026</time><span>Completed a summer at <strong>Novartis</strong> (AI &amp; Automation), shipping an adoption-propensity model and an LLM reporting agent on AWS Bedrock.</span></li>
       <li><time>Jan 2026</time><span>Appointed <strong>Course Producer</strong> for CSCI 561: Foundations of Artificial Intelligence at USC.</span></li>
-      <li><time>Dec 2025</time><span>Paper on transformer-based summarization and sentiment analysis published in <em>Lecture Notes in Electrical Engineering</em> (InCITe 2024). <a href="https://link.springer.com/chapter/10.1007/978-981-97-8193-5_24" target="_blank" rel="noopener">Read →</a></span></li>
       <li><time>Aug 2025</time><span>Began the M.S. in Computer Science (Artificial Intelligence) at USC Viterbi.</span></li>
       <li><time>Jul 2025</time><span>Concluded a six-month decision-analytics engagement with <strong>ZS Associates</strong> on the Pfizer account; received the “Best Case Study Solution” award and a return offer.</span></li>
+      <li><time>Feb 2025</time><span>Paper on transformer-based summarization and sentiment analysis published in <em>Lecture Notes in Electrical Engineering</em> (InCITe 2024). <a href="https://link.springer.com/chapter/10.1007/978-981-97-8193-5_24" target="_blank" rel="noopener">Read →</a></span></li>
     </ul>
   </div>
 </section>
@@ -712,7 +736,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
         </div>
         <div>
           <h3 class="xp-org">University of Southern California</h3>
-          <p class="xp-role">Course Producer &amp; Grader — CSCI 561: Foundations of Artificial Intelligence</p>
+          <p class="xp-role">Course Producer — CSCI 561: Foundations of Artificial Intelligence</p>
           <ul>
             <li>Supported the graduate section of USC's core AI course, covering <strong>search, adversarial game playing, propositional and first-order logic, and probabilistic reasoning</strong>.</li>
             <li>Held office hours and mentored students through programming assignments, with particular attention to the gap between an algorithm that is understood and one that can be implemented correctly.</li>
@@ -725,11 +749,89 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
   </div>
 </section>
 
+<!-- ══════════ COURSEWORK ══════════ -->
+<section id="coursework">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2><span class="n">06</span> Graduate Coursework</h2>
+      <p class="sec-sub">Selected coursework toward the M.S. in Computer Science at USC, with instructors.</p>
+    </div>
+
+    <div class="rv">
+      <div class="term-block">
+        <div class="term-head">
+          <span class="label">Fall 2026</span>
+          <span class="term-note">In progress</span>
+        </div>
+        <div class="courses">
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 544</span>
+              <span class="c-title">Applied Natural Language Processing</span>
+              <span class="c-prof">Prof. Xiang Ren</span>
+            </div>
+            <span class="c-grade now">In progress</span>
+          </div>
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 566</span>
+              <span class="c-title">Deep Learning and Its Applications</span>
+              <span class="c-prof">Prof. Yue Zhao</span>
+            </div>
+            <span class="c-grade now">In progress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="term-block">
+        <div class="term-head">
+          <span class="label">Completed</span>
+          <span class="term-note">2025 – 2026</span>
+        </div>
+        <div class="courses">
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 535</span>
+              <span class="c-title">Multimodal Probabilistic Learning of Human Communication</span>
+              <span class="c-prof">Prof. Mohammad Soleymani</span>
+            </div>
+            <span class="c-grade">A</span>
+          </div>
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 567</span>
+              <span class="c-title">Machine Learning</span>
+              <span class="c-prof">Prof. Haipeng Luo</span>
+            </div>
+            <span class="c-grade">A</span>
+          </div>
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 561</span>
+              <span class="c-title">Foundations of Artificial Intelligence</span>
+              <span class="c-prof">Prof. Wei-Min Shen</span>
+            </div>
+            <span class="c-grade">A</span>
+          </div>
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 570</span>
+              <span class="c-title">Analysis of Algorithms</span>
+              <span class="c-prof">Prof. Shahriar Shamsian</span>
+            </div>
+            <span class="c-grade">A</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══════════ PROJECTS ══════════ -->
 <section id="projects">
   <div class="wrap">
     <div class="sec-head rv">
-      <h2><span class="n">06</span> Selected Projects</h2>
+      <h2><span class="n">07</span> Selected Projects</h2>
       <p class="sec-sub">Implementation work, largely built to test an idea rather than to ship a product. Source is available for each.</p>
     </div>
 
@@ -836,7 +938,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
 <section id="skills">
   <div class="wrap">
     <div class="sec-head rv">
-      <h2><span class="n">07</span> Technical Background</h2>
+      <h2><span class="n">08</span> Technical Background</h2>
     </div>
     <div class="skills rv">
       <div class="sk">
@@ -888,7 +990,6 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
       <a class="btn" href="https://linkedin.com/in/prabudhd" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">CV</a>
     </div>
-    <p class="mailnote">Either address reaches me — a message sent to one is copied to the other.</p>
   </div>
 </div>
 
