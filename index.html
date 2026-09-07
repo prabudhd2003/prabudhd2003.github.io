@@ -28,7 +28,7 @@
   "name":"Prabudhd Krishna Kandpal",
   "url":"https://prabudhd.me",
   "image":"https://prabudhd.me/assets/headshot.jpg",
-  "email":"mailto:pkandpal@usc.edu",
+  "email":["pkandpal@usc.edu","prabudhd@gmail.com"],
   "jobTitle":"M.S. Computer Science (Artificial Intelligence) Student",
   "affiliation":{"@type":"CollegeOrUniversity","name":"University of Southern California"},
   "knowsAbout":["Multimodal machine learning","Affective computing","Large language models","Time series forecasting"],
@@ -99,7 +99,9 @@ h1,h2,h3,h4{color:var(--ink);font-family:var(--serif);font-weight:600;letter-spa
   font-family:var(--serif);font-size:17px;font-weight:600;color:var(--ink);
   letter-spacing:-.01em;white-space:nowrap;
 }
-.brand span{color:var(--accent)}
+.brand .b-dot{color:var(--accent)}
+.brand .b-short{display:none}
+@media(max-width:560px){.brand .b-full{display:none}.brand .b-short{display:inline}}
 .nav-links{display:flex;gap:1px;margin-left:auto;align-items:center;flex-wrap:nowrap}
 .nav-links a{
   font-size:13.5px;font-weight:450;color:var(--ink-3);padding:7px 12px;border-radius:6px;
@@ -115,7 +117,8 @@ h1,h2,h3,h4{color:var(--ink);font-family:var(--serif);font-weight:600;letter-spa
 @media(max-width:900px){
   .nav-links a:not(.nav-cta):not(.keep){display:none}
 }
-@media(max-width:420px){.nav-links a.keep{display:none}}
+@media(max-width:600px){.nav-links a.wide{display:none}}
+@media(max-width:360px){.nav-links a.keep{display:none}}
 
 /* ═══════════════ hero ═══════════════ */
 .hero{padding:76px 0 68px;border-bottom:1px solid var(--line)}
@@ -165,15 +168,27 @@ h1{
 
 /* ═══════════════ status strip ═══════════════ */
 .strip{background:var(--paper-2);border-bottom:1px solid var(--line)}
-.strip-in{display:flex;flex-wrap:wrap;gap:0;align-items:stretch}
-.stat{padding:20px 30px 20px 0;margin-right:30px;border-right:1px solid var(--line)}
-.stat:last-child{border-right:none;margin-right:0;padding-right:0}
-.stat-k{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-4);margin-bottom:4px}
-.stat-v{font-size:14.5px;color:var(--ink);font-weight:500;line-height:1.45}
-.stat-v em{font-style:normal;color:var(--ink-3);font-weight:400}
+.strip-in{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.stat{padding:20px 26px;border-left:1px solid var(--line);min-width:0}
+.stat:nth-child(4n+1){border-left:none;padding-left:0}
+.stat:nth-child(4n){padding-right:0}
+.stat-k{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-4);margin-bottom:5px}
+.stat-v{font-size:14.5px;color:var(--ink);font-weight:500;line-height:1.5}
+.stat-v em{display:block;font-style:normal;color:var(--ink-3);font-weight:400;font-size:13.5px;margin-top:2px}
 .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#1f9d55;margin-right:7px;vertical-align:1px}
-@media(max-width:760px){
-  .stat{border-right:none;margin-right:0;padding:14px 0;width:100%;border-bottom:1px solid var(--line)}
+@media(max-width:900px){
+  .strip-in{grid-template-columns:1fr 1fr}
+  .stat{padding:16px 20px;border-left:1px solid var(--line)}
+  .stat:nth-child(odd){border-left:none;padding-left:0}
+  .stat:nth-child(even){padding-right:0}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}
+}
+@media(max-width:540px){
+  .strip-in{grid-template-columns:1fr}
+  .stat{border-left:none;padding:14px 0;border-bottom:1px solid var(--line)}
   .stat:last-child{border-bottom:none}
 }
 
@@ -290,7 +305,7 @@ section:last-of-type{border-bottom:none}
 }
 .f:hover{color:var(--ink);border-color:var(--line-3)}
 .f[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:18px}
 .card{
   display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface);
   border-radius:12px;padding:24px;transition:border-color .2s,box-shadow .2s,transform .2s;
@@ -329,6 +344,7 @@ section:last-of-type{border-bottom:none}
 .contact h2{font-size:clamp(1.9rem,4vw,2.5rem);margin-bottom:16px}
 .contact p{font-size:17px;color:var(--ink-2);max-width:56ch;margin:0 auto 30px;line-height:1.75}
 .contact .actions{justify-content:center}
+.mailnote{font-size:13.5px !important;color:var(--ink-4) !important;margin:22px auto 0 !important;max-width:62ch}
 footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--paper-2)}
 .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-4)}
 .foot a{color:var(--ink-3)}
@@ -352,10 +368,10 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
 
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="brand">Prabudhd Krishna Kandpal<span>.</span></a>
+    <a href="#top" class="brand"><span class="b-full">Prabudhd Krishna Kandpal</span><span class="b-short">P. K. Kandpal</span><span class="b-dot">.</span></a>
     <nav class="nav-links">
       <a href="#about">About</a>
-      <a href="#publications" class="keep">Publications</a>
+      <a href="#publications" class="keep wide">Publications</a>
       <a href="#experience">Experience</a>
       <a href="#teaching">Teaching</a>
       <a href="#projects" class="keep">Projects</a>
@@ -382,9 +398,9 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
       <div class="actions">
         <a class="btn solid" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Curriculum Vitae
+          CV
         </a>
-        <a class="btn" href="mailto:pkandpal@usc.edu">
+        <a class="btn" href="mailto:pkandpal@usc.edu?cc=prabudhd@gmail.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
           Email
         </a>
@@ -410,7 +426,8 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
       </figure>
       <p class="portrait-cap">
         Los Angeles, California<br>
-        <a href="mailto:pkandpal@usc.edu" style="color:var(--accent)">pkandpal@usc.edu</a>
+        <a href="mailto:pkandpal@usc.edu?cc=prabudhd@gmail.com" style="color:var(--accent)">pkandpal@usc.edu</a><br>
+        <a href="mailto:pkandpal@usc.edu?cc=prabudhd@gmail.com" style="color:var(--accent)">prabudhd@gmail.com</a>
       </p>
     </div>
   </div>
@@ -421,19 +438,19 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
   <div class="wrap strip-in">
     <div class="stat">
       <div class="stat-k">Status</div>
-      <div class="stat-v"><span class="dot"></span>Seeking Full-Time Machine Learning Engineer Roles</div>
+      <div class="stat-v"><span class="dot"></span>Open to opportunities <em>Full-time machine learning engineer roles</em></div>
     </div>
     <div class="stat">
       <div class="stat-k">Degree</div>
-      <div class="stat-v">M.S. Computer Science <em>· expected May 2027</em></div>
+      <div class="stat-v">M.S. Computer Science <em>Expected May 2027</em></div>
     </div>
     <div class="stat">
-      <div class="stat-k">Grade Point Average</div>
-      <div class="stat-v">4.00 / 4.00 <em>· USC</em></div>
+      <div class="stat-k">GPA</div>
+      <div class="stat-v">4.00 / 4.00 <em>University of Southern California</em></div>
     </div>
     <div class="stat">
       <div class="stat-k">Publications</div>
-      <div class="stat-v">2 peer-reviewed <em>· Springer</em></div>
+      <div class="stat-v">2 peer-reviewed <em>Springer</em></div>
     </div>
   </div>
 </div>
@@ -478,8 +495,8 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
           generally.
         </p>
         <p>
-          I am currently looking for <strong>Summer 2027 research internships</strong> and, beyond
-          that, <strong>doctoral programs</strong> in multimodal representation learning and
+          I am currently looking for <strong>full-time machine learning engineer roles</strong> and,
+          in parallel, <strong>doctoral programs</strong> in multimodal representation learning and
           affective computing. If you work on problems where the interesting structure lies between
           modalities rather than within one, I would be glad to hear from you.
         </p>
@@ -860,16 +877,18 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
   <div class="wrap contact-in">
     <h2>Get in touch</h2>
     <p>
-      I am glad to hear about research collaborations, Summer 2027 internships, and doctoral
-      opportunities in multimodal learning. Email is the surest way to reach me.
+      I am glad to hear about research collaborations, full-time machine learning roles, and
+      doctoral opportunities in multimodal learning. Email is the surest way to reach me.
     </p>
     <div class="actions">
-      <a class="btn solid" href="mailto:pkandpal@usc.edu">pkandpal@usc.edu</a>
+      <a class="btn solid" href="mailto:pkandpal@usc.edu?cc=prabudhd@gmail.com">pkandpal@usc.edu</a>
+      <a class="btn" href="mailto:pkandpal@usc.edu?cc=prabudhd@gmail.com">prabudhd@gmail.com</a>
       <a class="btn" href="tel:+12133012629">+1 (213) 301-2629</a>
       <a class="btn" href="https://scholar.google.com/citations?user=DyUCZtoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
       <a class="btn" href="https://linkedin.com/in/prabudhd" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
+      <a class="btn" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">CV</a>
     </div>
+    <p class="mailnote">Either address reaches me — a message sent to one is copied to the other.</p>
   </div>
 </div>
 
