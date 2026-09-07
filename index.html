@@ -6,7 +6,6 @@
 <title>Prabudhd Krishna Kandpal</title>
 <meta name="description" content="Prabudhd Krishna Kandpal — M.S. Computer Science (Artificial Intelligence), University of Southern California. Multimodal representation learning, affective computing, and grounded LLM reasoning.">
 <meta name="author" content="Prabudhd Krishna Kandpal">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <link rel="canonical" href="https://prabudhd.me/">
 
 <meta property="og:type" content="profile">
@@ -25,53 +24,15 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@graph":[
-    {
-      "@type":"Person",
-      "@id":"https://prabudhd.me/#person",
-      "name":"Prabudhd Krishna Kandpal",
-      "alternateName":["Prabudhd Kandpal","Krishna Kandpal","P. K. Kandpal","Prabudhd K. Kandpal"],
-      "givenName":"Prabudhd",
-      "additionalName":"Krishna",
-      "familyName":"Kandpal",
-      "url":"https://prabudhd.me",
-      "mainEntityOfPage":"https://prabudhd.me/",
-      "image":"https://prabudhd.me/assets/headshot.jpg",
-      "email":["pkandpal@usc.edu","prabudhd@gmail.com"],
-      "jobTitle":"M.S. Computer Science (Artificial Intelligence) Student",
-      "description":"Master's student in Computer Science at the University of Southern California working on multimodal machine learning, affective computing, and grounded LLM reasoning.",
-      "affiliation":{"@type":"CollegeOrUniversity","name":"University of Southern California"},
-      "alumniOf":[
-        {"@type":"CollegeOrUniversity","name":"University of Southern California"},
-        {"@type":"CollegeOrUniversity","name":"Guru Gobind Singh Indraprastha University"}
-      ],
-      "homeLocation":{"@type":"Place","address":{"@type":"PostalAddress","addressLocality":"Los Angeles","addressRegion":"CA","addressCountry":"US"}},
-      "knowsAbout":["Multimodal machine learning","Affective computing","Large language models","Retrieval-augmented generation","Time series forecasting"],
-      "sameAs":[
-        "https://scholar.google.com/citations?user=DyUCZtoAAAAJ",
-        "https://www.linkedin.com/in/prabudhd",
-        "https://github.com/prabudhd2003"
-      ]
-    },
-    {
-      "@type":"WebSite",
-      "@id":"https://prabudhd.me/#website",
-      "url":"https://prabudhd.me/",
-      "name":"Prabudhd Krishna Kandpal",
-      "inLanguage":"en",
-      "publisher":{"@id":"https://prabudhd.me/#person"},
-      "about":{"@id":"https://prabudhd.me/#person"}
-    },
-    {
-      "@type":"ProfilePage",
-      "@id":"https://prabudhd.me/#profilepage",
-      "url":"https://prabudhd.me/",
-      "name":"Prabudhd Krishna Kandpal",
-      "isPartOf":{"@id":"https://prabudhd.me/#website"},
-      "mainEntity":{"@id":"https://prabudhd.me/#person"}
-    }
-  ]
+  "@context":"https://schema.org","@type":"Person",
+  "name":"Prabudhd Krishna Kandpal",
+  "url":"https://prabudhd.me",
+  "image":"https://prabudhd.me/assets/headshot.jpg",
+  "email":["pkandpal@usc.edu","prabudhd@gmail.com"],
+  "jobTitle":"M.S. Computer Science (Artificial Intelligence) Student",
+  "affiliation":{"@type":"CollegeOrUniversity","name":"University of Southern California"},
+  "knowsAbout":["Multimodal machine learning","Affective computing","Large language models","Time series forecasting"],
+  "sameAs":["https://scholar.google.com/citations?user=DyUCZtoAAAAJ","https://github.com/prabudhd2003","https://linkedin.com/in/prabudhd"]
 }
 </script>
 
@@ -335,19 +296,30 @@ section:last-of-type{border-bottom:none}
   border:1px solid var(--line);padding:3px 9px;border-radius:5px;
 }
 
-/* ═══════════════ coursework (sidebar) ═══════════════ */
-.cw{margin:14px 0 0;padding:14px 0 0;border-top:1px dashed var(--line-2)}
-.cw > .label{display:block;margin-bottom:11px;font-size:10px;color:var(--ink-4)}
-.cw-item{display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:baseline;margin-bottom:11px}
-.cw-item:last-child{margin-bottom:0}
-.cw-code{font-size:11px;font-weight:650;letter-spacing:.05em;color:var(--accent)}
-.cw-mark{
-  font-size:10px;font-weight:650;letter-spacing:.06em;color:var(--ink-4);
-  border:1px solid var(--line-2);border-radius:4px;padding:1px 6px;white-space:nowrap;
+/* ═══════════════ coursework ═══════════════ */
+.term-block{margin-bottom:36px}
+.term-block:last-child{margin-bottom:0}
+.term-head{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+.term-head .label{color:var(--accent)}
+.term-head .term-note{font-size:12.5px;color:var(--ink-4)}
+.courses{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+@media(max-width:860px){.courses{grid-template-columns:1fr;gap:0}}
+.course{
+  display:grid;grid-template-columns:1fr auto;gap:10px 16px;align-items:start;
+  padding:15px 0;border-bottom:1px solid var(--line);
 }
-.cw-mark.a{color:var(--accent);border-color:var(--accent-line);background:var(--accent-soft)}
-.cw-body{grid-column:1/-1;font-size:13px;line-height:1.5;color:var(--ink-2)}
-.cw-body span{display:block;color:var(--ink-4);font-size:12.5px;margin-top:1px}
+.c-code{
+  font-size:12px;font-weight:650;letter-spacing:.06em;color:var(--accent);
+  display:block;margin-bottom:3px;
+}
+.c-title{font-family:var(--serif);font-size:16px;font-weight:600;color:var(--ink);line-height:1.35}
+.c-prof{display:block;margin-top:4px;font-size:13px;color:var(--ink-3)}
+.c-grade{
+  font-size:12px;font-weight:650;letter-spacing:.04em;padding:3px 10px;border-radius:5px;
+  background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line);
+  white-space:nowrap;align-self:center;
+}
+.c-grade.now{background:var(--paper-2);color:var(--ink-3);border-color:var(--line-2);font-weight:550}
 
 /* ═══════════════ projects ═══════════════ */
 .filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:26px}
@@ -580,35 +552,6 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
           <div class="int">
             <div class="int-t">M.S. Computer Science (AI)</div>
             <div class="int-d">University of Southern California · Aug 2025 – May 2027 · GPA 4.00</div>
-
-            <div class="cw">
-              <span class="label">Graduate coursework</span>
-
-              <div class="cw-item">
-                <span class="cw-code">CSCI 544</span><span class="cw-mark">Fall 26</span>
-                <div class="cw-body">Applied Natural Language Processing<span>Prof. Xiang Ren</span></div>
-              </div>
-              <div class="cw-item">
-                <span class="cw-code">CSCI 566</span><span class="cw-mark">Fall 26</span>
-                <div class="cw-body">Deep Learning and Its Applications<span>Prof. Yue Zhao</span></div>
-              </div>
-              <div class="cw-item">
-                <span class="cw-code">CSCI 535</span><span class="cw-mark a">A</span>
-                <div class="cw-body">Multimodal Probabilistic Learning of Human Communication<span>Prof. Mohammad Soleymani</span></div>
-              </div>
-              <div class="cw-item">
-                <span class="cw-code">CSCI 567</span><span class="cw-mark a">A</span>
-                <div class="cw-body">Machine Learning<span>Prof. Haipeng Luo</span></div>
-              </div>
-              <div class="cw-item">
-                <span class="cw-code">CSCI 561</span><span class="cw-mark a">A</span>
-                <div class="cw-body">Foundations of Artificial Intelligence<span>Prof. Wei-Min Shen</span></div>
-              </div>
-              <div class="cw-item">
-                <span class="cw-code">CSCI 570</span><span class="cw-mark a">A</span>
-                <div class="cw-body">Analysis of Algorithms<span>Prof. Shahriar Shamsian</span></div>
-              </div>
-            </div>
           </div>
           <div class="int">
             <div class="int-t">B.S. Artificial Intelligence &amp; Machine Learning</div>
@@ -629,9 +572,9 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
     <ul class="news rv">
       <li><time>Aug 2026</time><span>Completed a summer at <strong>Novartis</strong> (AI &amp; Automation), shipping an adoption-propensity model and an LLM reporting agent on AWS Bedrock.</span></li>
       <li><time>Jan 2026</time><span>Appointed <strong>Course Producer</strong> for CSCI 561: Foundations of Artificial Intelligence at USC.</span></li>
-      <li><time>Dec 2025</time><span>Paper on transformer-based summarization and sentiment analysis published in <em>Lecture Notes in Electrical Engineering</em> (InCITe 2024). <a href="https://link.springer.com/chapter/10.1007/978-981-97-8193-5_24" target="_blank" rel="noopener">Read →</a></span></li>
       <li><time>Aug 2025</time><span>Began the M.S. in Computer Science (Artificial Intelligence) at USC Viterbi.</span></li>
       <li><time>Jul 2025</time><span>Concluded a six-month decision-analytics engagement with <strong>ZS Associates</strong> on the Pfizer account; received the “Best Case Study Solution” award and a return offer.</span></li>
+      <li><time>Feb 2025</time><span>Paper on transformer-based summarization and sentiment analysis published in <em>Lecture Notes in Electrical Engineering</em> (InCITe 2024). <a href="https://link.springer.com/chapter/10.1007/978-981-97-8193-5_24" target="_blank" rel="noopener">Read →</a></span></li>
     </ul>
   </div>
 </section>
@@ -793,7 +736,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
         </div>
         <div>
           <h3 class="xp-org">University of Southern California</h3>
-          <p class="xp-role">Course Producer &amp; Grader — CSCI 561: Foundations of Artificial Intelligence</p>
+          <p class="xp-role">Course Producer — CSCI 561: Foundations of Artificial Intelligence</p>
           <ul>
             <li>Supported the graduate section of USC's core AI course, covering <strong>search, adversarial game playing, propositional and first-order logic, and probabilistic reasoning</strong>.</li>
             <li>Held office hours and mentored students through programming assignments, with particular attention to the gap between an algorithm that is understood and one that can be implemented correctly.</li>
@@ -806,11 +749,89 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
   </div>
 </section>
 
+<!-- ══════════ COURSEWORK ══════════ -->
+<section id="coursework">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2><span class="n">06</span> Graduate Coursework</h2>
+      <p class="sec-sub">Coursework toward the M.S. in Computer Science at USC, with instructors.</p>
+    </div>
+
+    <div class="rv">
+      <div class="term-block">
+        <div class="term-head">
+          <span class="label">Fall 2026</span>
+          <span class="term-note">In progress</span>
+        </div>
+        <div class="courses">
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 544</span>
+              <span class="c-title">Applied Natural Language Processing</span>
+              <span class="c-prof">Prof. Xiang Ren</span>
+            </div>
+            <span class="c-grade now">In progress</span>
+          </div>
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 566</span>
+              <span class="c-title">Deep Learning and Its Applications</span>
+              <span class="c-prof">Prof. Yue Zhao</span>
+            </div>
+            <span class="c-grade now">In progress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="term-block">
+        <div class="term-head">
+          <span class="label">Completed</span>
+          <span class="term-note">2025 – 2026</span>
+        </div>
+        <div class="courses">
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 535</span>
+              <span class="c-title">Multimodal Probabilistic Learning of Human Communication</span>
+              <span class="c-prof">Prof. Mohammad Soleymani</span>
+            </div>
+            <span class="c-grade">A</span>
+          </div>
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 567</span>
+              <span class="c-title">Machine Learning</span>
+              <span class="c-prof">Prof. Haipeng Luo</span>
+            </div>
+            <span class="c-grade">A</span>
+          </div>
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 561</span>
+              <span class="c-title">Foundations of Artificial Intelligence</span>
+              <span class="c-prof">Prof. Wei-Min Shen</span>
+            </div>
+            <span class="c-grade">A</span>
+          </div>
+          <div class="course">
+            <div>
+              <span class="c-code">CSCI 570</span>
+              <span class="c-title">Analysis of Algorithms</span>
+              <span class="c-prof">Prof. Shahriar Shamsian</span>
+            </div>
+            <span class="c-grade">A</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ══════════ PROJECTS ══════════ -->
 <section id="projects">
   <div class="wrap">
     <div class="sec-head rv">
-      <h2><span class="n">06</span> Selected Projects</h2>
+      <h2><span class="n">07</span> Selected Projects</h2>
       <p class="sec-sub">Implementation work, largely built to test an idea rather than to ship a product. Source is available for each.</p>
     </div>
 
@@ -917,7 +938,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
 <section id="skills">
   <div class="wrap">
     <div class="sec-head rv">
-      <h2><span class="n">07</span> Technical Background</h2>
+      <h2><span class="n">08</span> Technical Background</h2>
     </div>
     <div class="skills rv">
       <div class="sk">
