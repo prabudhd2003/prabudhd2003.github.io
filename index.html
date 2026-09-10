@@ -423,9 +423,10 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
       <p class="subtitle">M.S. Computer Science, Artificial Intelligence</p>
       <p class="hero-bio">
         I work on <strong>multimodal machine learning</strong> — models that reason jointly over
-        speech, vision, and language instead of treating each stream in isolation. My current
-        research asks whether a model can identify the precise moment a human conversation turns
-        adversarial, and what representation is required to see it coming.
+        speech, vision, and language rather than treating each stream in isolation — and on what
+        becomes of those models after training: how <strong>preference alignment decays</strong>
+        across successive tuning stages, and how reliably a vision-language model reads a document
+        that somebody has an incentive to alter.
       </p>
       <div class="actions">
         <a class="btn solid" href="assets/Prabudhd_Kandpal_Resume.pdf" target="_blank" rel="noopener">
@@ -513,6 +514,20 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
           baseline by <strong>7.2 percentage points</strong>.
         </p>
         <p>
+          Two projects this fall extend that work outward from perception toward the reliability of
+          the models themselves. The first asks what a language model should <em>rehearse</em>: when
+          an assistant is tuned in sequence for helpfulness, then safety, then instruction
+          following, each stage quietly erodes the last, and a replay budget of ten percent has to
+          be spent on something. We record every stored preference pair's length-normalized DPO
+          margin, replay the pairs that have fallen furthest from their peak —
+          <strong>Most-Forgotten Replay</strong> — and compare that rule against random and
+          difficulty-based selection under an identical update budget. The second turns the
+          multimodal question adversarial: whether a bounded, near-invisible pixel perturbation can
+          make a vision-language model extract a chosen false total from a receipt or a credential
+          that a résumé never states, and which lightweight defenses still hold once the attacker
+          knows they are there.
+        </p>
+        <p>
           Running alongside the research is a second interest in <em>whether these methods survive
           contact with practice</em>. Over two summers at <strong>Novartis</strong> and
           <strong>ZS Associates</strong> I built gradient-boosted models for identifying early
@@ -524,9 +539,10 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
         </p>
         <p>
           I am currently looking for <strong>full-time machine learning engineer roles</strong> and,
-          in parallel, <strong>doctoral programs</strong> in multimodal representation learning and
-          affective computing. If you work on problems where the interesting structure lies between
-          modalities rather than within one, I would be glad to hear from you.
+          in parallel, <strong>doctoral programs</strong> in multimodal representation learning,
+          affective computing, and the reliability of post-trained models. If you work on problems
+          where the interesting structure lies between modalities — or on what survives the next
+          round of training — I would be glad to hear from you.
         </p>
       </div>
 
@@ -540,6 +556,14 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
           <div class="int">
             <div class="int-t">Affective &amp; interactional computing</div>
             <div class="int-d">Modeling emotional trajectory and conflict onset in naturalistic human dialogue.</div>
+          </div>
+          <div class="int">
+            <div class="int-t">Continual post-training &amp; alignment retention</div>
+            <div class="int-d">What a fixed replay budget should buy when sequential preference tuning erodes behavior an earlier stage taught.</div>
+          </div>
+          <div class="int">
+            <div class="int-t">Adversarial robustness of document VLMs</div>
+            <div class="int-d">Targeted pixel attacks on vision-language field extraction, and defenses measured against an attacker who knows them.</div>
           </div>
           <div class="int">
             <div class="int-t">Grounded LLM reasoning</div>
@@ -574,6 +598,8 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
       <h2><span class="n">02</span> Recent</h2>
     </div>
     <ul class="news rv">
+      <li><time>Sep 2026</time><span>Began <strong>Poisoned Paperwork</strong> (CSCI 566): targeted adversarial perturbations against vision-language document extraction on SROIE, CORD&nbsp;v2, and synthetic résumés, evaluated for transfer, transformation survival, and defense.</span></li>
+      <li><time>Sep 2026</time><span>Began <strong>Most-Forgotten Replay</strong> (CSCI 544): does replaying the preference pairs that lost the most DPO margin beat random replay at the same 10% budget across sequential tuning stages?</span></li>
       <li><time>Aug 2026</time><span>Completed a summer at <strong>Novartis</strong> (AI &amp; Automation), shipping an adoption-propensity model and an LLM reporting agent on AWS Bedrock.</span></li>
       <li><time>Jan 2026</time><span>Appointed <strong>Course Producer</strong> for CSCI 561: Foundations of Artificial Intelligence at USC.</span></li>
       <li><time>Aug 2025</time><span>Began the M.S. in Computer Science (Artificial Intelligence) at USC Viterbi.</span></li>
@@ -773,6 +799,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
               <span class="c-code">CSCI 544</span>
               <span class="c-title">Applied Natural Language Processing</span>
               <span class="c-prof">Prof. Xiang Ren</span>
+              <span class="c-prof">Semester project — Most-Forgotten Replay: budgeted replay for continual preference tuning</span>
             </div>
             <span class="c-grade now">In progress</span>
           </div>
@@ -781,6 +808,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
               <span class="c-code">CSCI 566</span>
               <span class="c-title">Deep Learning and Its Applications</span>
               <span class="c-prof">Prof. Yue Zhao</span>
+              <span class="c-prof">Semester project — Poisoned Paperwork: adversarial document images against vision-language models</span>
             </div>
             <span class="c-grade now">In progress</span>
           </div>
@@ -836,7 +864,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
   <div class="wrap">
     <div class="sec-head rv">
       <h2><span class="n">07</span> Selected Projects</h2>
-      <p class="sec-sub">Implementation work, largely built to test an idea rather than to ship a product. Source is available for each.</p>
+      <p class="sec-sub">Implementation work, largely built to test an idea rather than to ship a product. Source is available for completed work; the two Fall 2026 studies are still running.</p>
     </div>
 
     <div class="filters rv" id="filters">
@@ -856,6 +884,18 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
         <div class="tags"><span>PyTorch</span><span>Transformers</span><span>Multimodal fusion</span></div>
         <span class="go">View repository <span class="arw">→</span></span>
       </a>
+
+      <div class="card" data-t="llm ml">
+        <div class="card-top"><h3>Most-Forgotten Replay</h3><span class="pill">In progress</span></div>
+        <p>What should a language model rehearse? Sequential DPO tuning for helpfulness, safety, and instruction following erodes earlier preferences. Every stored pair's length-normalized preference margin is rescored during later stages, and the pairs that fell furthest from their peak are replayed — against random and lowest-margin selection under an <strong>identical 10% replay budget</strong>. Qwen2.5-1.5B-Instruct, 4-bit QLoRA, twelve sequential runs.</p>
+        <div class="tags"><span>DPO</span><span>QLoRA</span><span>Continual learning</span><span>CSCI 544</span></div>
+      </div>
+
+      <div class="card" data-t="ml llm">
+        <div class="card-top"><h3>Poisoned Paperwork</h3><span class="pill">In progress</span></div>
+        <p>Can a bounded pixel perturbation make a vision-language model report a total that is not on the receipt? Targeted PGD against Qwen2.5-VL on SROIE and CORD&nbsp;v2, with a résumé-credential case study — measured for perceptibility, transfer to InternVL2.5, survival through JPEG, resizing, and printing, and against three lightweight defenses re-attacked by an <strong>adaptive</strong> objective.</p>
+        <div class="tags"><span>Adversarial ML</span><span>Vision-language models</span><span>Document AI</span><span>CSCI 566</span></div>
+      </div>
 
       <a class="card" data-t="llm ml" href="https://github.com/prabudhd2003/rag_for_pdf" target="_blank" rel="noopener">
         <div class="card-top"><h3>Retrieval-Augmented Generation from First Principles</h3></div>
@@ -949,6 +989,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
         <span class="label">Machine Learning</span>
         <div class="sk-list">
           <span>PyTorch</span><span>Transformers</span><span>Multimodal fusion</span><span>LLMs &amp; RAG</span>
+          <span>DPO &amp; preference tuning</span><span>QLoRA / PEFT</span><span>Adversarial robustness</span>
           <span>XGBoost</span><span>LightGBM</span><span>SHAP</span><span>Time-series forecasting</span>
         </div>
       </div>
@@ -984,7 +1025,8 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;background:var(--pap
     <h2>Get in touch</h2>
     <p>
       I am glad to hear about research collaborations, full-time machine learning roles, and
-      doctoral opportunities in multimodal learning. Email is the surest way to reach me.
+      doctoral opportunities in multimodal learning, model alignment, and robustness. Email is the
+      surest way to reach me.
     </p>
     <div class="actions">
       <a class="btn solid" href="mailto:pkandpal@usc.edu?cc=prabudhd@gmail.com">pkandpal@usc.edu</a>
